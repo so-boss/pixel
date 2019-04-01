@@ -1,0 +1,39 @@
+action {
+  @mixin element {
+    &> block {
+      @mixin cursor pointer;
+    }
+  }
+
+  block > wrapper > wrapper > thing:nth-child(1) {
+    @mixin action text;
+  }
+
+  &[arrow], &[drawer], &[indicator] {
+    block > wrapper > wrapper > thing:nth-child(1) {
+      @mixin font color, grey;
+    }
+  }
+
+  &[drawer] {
+    border: 3px solid rgba(255,255,255,0);
+    border-radius: 6px;
+    transition: border-color .3s ease-out;
+    position: relative;
+    perspective: 700px;
+    perspective-origin: center;
+    overflow: hidden;
+    z-index: 10;
+
+    block > wrapper > wrapper:nth-child(3) > svg {
+      transform: rotate(0deg);
+      transition: .3s transform ease;
+    }
+  }
+  &[drawer=expanded] {
+    border-color:#1778d3;
+    block > wrapper > wrapper:nth-child(3) > svg {
+      transform: rotate(180deg);
+    }
+  }
+}

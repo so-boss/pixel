@@ -1,0 +1,20 @@
+@mixin drawer {
+    z-index:1;
+
+    @mixin drawer_header {
+
+    }
+
+    @mixin drawer_body {
+
+    }
+
+    @mixin drawer_footer {
+        & > action[type] {
+            &:last-child {
+                @mixin flex right;
+            }
+        }
+    }
+}
+

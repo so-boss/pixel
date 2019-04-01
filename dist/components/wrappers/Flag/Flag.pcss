@@ -1,0 +1,16 @@
+@mixin flag {
+    @mixin themes;
+
+    & block {
+        > wrapper {
+            > wrapper {
+                @mixin block_col_2 {
+                    & > thing:nth-child(1) {
+                        @mixin line 1, flag;
+                        text-align:center;
+                    }
+                };
+            }
+        }
+    }
+}
