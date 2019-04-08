@@ -3,7 +3,7 @@ import { Wrapper, Label } from './../../index.js';
 import React from "react";
 import PropTypes from 'prop-types';
 
-export default function Field ({ type, value, label }) {
+function Field ({ type, value, label }) {
   return (
     <Wrapper pixel="field">
       <Label>{value}</Label>
@@ -17,3 +17,5 @@ Field.propTypes = {
   value:PropTypes.string,
   label:PropTypes.string
 };
+
+export default Field;
