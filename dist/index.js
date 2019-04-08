@@ -1,3 +1,3 @@
-import { Title, Thing, Wrapper, Label, Message } from "./components"; // import TextInput from "./TextInput";
+import { Title, Thing, Wrapper, Label, Message, Field } from "./components"; // import TextInput from "./TextInput";
 
-export { Title, Thing, Wrapper, Label, Message };
+export { Title, Thing, Wrapper, Label, Message, Field };
