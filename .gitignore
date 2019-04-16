@@ -1,4 +1,26 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+_current_test
+_dist
+_playground
+.alm
+.dev
+.DS_Store
+.fusebox
+.idea
+.project
+.release
+.settings
+.tmp
+.vscode
+build
+dist
+node_modules
+npm-debug.log*
+playground
+sourcemaps.js.map
+yarn.lock
+some.sh
+
 
 # dependencies
 /node_modules
@@ -21,3 +43,5 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.fusebox/cache/3.7.1/*
+.fusebox
