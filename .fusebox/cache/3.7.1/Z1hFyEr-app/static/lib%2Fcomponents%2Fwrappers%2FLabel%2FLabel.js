@@ -1,9 +1,0 @@
-module.exports = { contents: "\"use strict\";\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst index_js_1 = require(\"./../../index.js\");\nconst react_1 = require(\"react\");\nconst prop_types_1 = require(\"prop-types\");\nconst accounting = require('accounting');\nfunction CurrencyValue({ quantity, joinWith, children }) {\n    let processedValue;\n    // IF more than one value\n    // i.e. $25K / $50K\n    if (quantity && quantity > 1) {\n        processedValue = children.join(joinWith);\n    }\n    else {\n        // OTHERWISE only one value\n        processedValue = accounting.formatMoney(children, \"$\", 0);\n    }\n    return processedValue;\n}\nCurrencyValue.defaultProps = {\n    joinWith: \" / \",\n    multi: 1\n};\nCurrencyValue.propTypes = {\n    quantity: prop_types_1.default.number,\n    joinWith: prop_types_1.default.string,\n    children: prop_types_1.default.any\n};\n/*\n  <Label currency=\"$\">1000</Label>\n  <Label currency=\"$\" multi={2}>\n    [\"$1M\", \"$2M\"]\n   </Label>\n*/\nfunction Label({ currency, multi, children, ...rest }) {\n    return (react_1.default.createElement(index_js_1.Thing, Object.assign({ type: \"label\", currency: currency }, rest), !currency\n        ? children\n        : (react_1.default.createElement(CurrencyValue, { quantity: multi }, children))));\n}\nexports.default = Label;\nLabel.defaultProps = {\n    currency: false,\n    multi: 1\n};\nLabel.propTypes = {\n    id: prop_types_1.default.string,\n    type: prop_types_1.default.string,\n    currency: prop_types_1.default.any,\n    multi: prop_types_1.default.number,\n    pixel: prop_types_1.default.string,\n    children: prop_types_1.default.any\n};\n// export default Label;\n//\n",
-dependencies: ["./../../index.js","react","prop-types","accounting"],
-sourceMap: {},
-headerContent: undefined,
-mtime: 1555427629986,
-devLibsRequired : undefined,
-ac : undefined,
-_ : {}
-}
