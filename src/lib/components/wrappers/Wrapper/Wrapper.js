@@ -1,5 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import * as React from 'react';
+import * as PropTypes from 'prop-types';
+
 
 export default function Wrapper ({ id, type, children, ...rest }) {
   return (
@@ -26,7 +27,7 @@ export default function Wrapper ({ id, type, children, ...rest }) {
 // );
 
 Wrapper.defaultProps = {
-  pixel: 'wrapper',
+  //pixel: 'wrapper',
 };
 
 Wrapper.propTypes = {

@@ -16,10 +16,6 @@
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
   },
   "devDependencies": {
-    "prop-types": "^15.6.0",
-    "fuse-box": "^3.5.0",
-    "typescript": "^3.0.3",
-    "uglify-es": "^3.3.9",
     "@babel/cli": "^7.0.0-beta.44",
     "@babel/core": "^7.0.0-beta.41",
     "@babel/plugin-transform-runtime": "^7.4.0",
@@ -32,11 +28,15 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
+    "fuse-box": "^3.5.0",
+    "node-sass": "^4.11.0",
     "normalize.css": "^8.0.0",
+    "postcss": "^7.0.14",
     "postcss-apply": "^0.11.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^12.0.0",
     "postcss-reporter": "^6.0.0",
+    "prop-types": "^15.6.0",
     "react": "^16.8.6",
     "react-autobind": "^1.0.6",
     "react-dom": "^16.8.6",
@@ -49,7 +49,9 @@
     "react-transition-group": "^2.5.0",
     "rimraf": "^2.6.3",
     "stylelint": "^9.5.0",
-    "stylelint-config-standard": "^18.2.0"
+    "stylelint-config-standard": "^18.2.0",
+    "typescript": "^3.0.3",
+    "uglify-es": "^3.3.9"
   },
   "peerDependencies": {
     "react": "^16.8.6",

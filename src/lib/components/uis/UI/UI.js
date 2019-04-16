@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import * as PropTypes from 'prop-types';
 
 const _ = require('lodash');
 const uis = require('@pixel/components/uis/inventory.js');

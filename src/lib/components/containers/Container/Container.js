@@ -1,7 +1,7 @@
 import { Wrapper, Title } from './../../index.js';
 
-import React from 'react';
-import PropTypes from 'prop-types';
+import * as React from 'react';
+import * as PropTypes from 'prop-types';
 
 const isObject = function (value) {
   return typeof value === 'object' && typeof value !== 'function' && value !== undefined;

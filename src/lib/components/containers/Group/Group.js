@@ -1,7 +1,7 @@
 import { Container } from './../../index.js';
 
-import React from "react";
-import PropTypes from 'prop-types';
+import * as React from 'react';
+import * as PropTypes from 'prop-types';
 
 const Group = props => React.createElement(
   Container,

@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import {
   UI, Page, Wrapper, Interview, Flag, Tag, Action, Block, ActionBlock, ActionButton, ActionLink, Icon, Group, Drawer, Title,
 } from '@pixel/components';

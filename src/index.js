@@ -1,7 +1,9 @@
-import React from 'react';
+import * as React from 'react';
 import { render } from "react-dom";
+// import './App.scss';
 
 import {Wrapper, Label, Content, Group, Title } from "./lib";
+// import App from "./App.js"
 
 const seperatorStyles = {
   height:'16px',
@@ -17,7 +19,7 @@ const Paragraphs = () => (
     </Wrapper>
 );
 
-const App = () => (
+const Chrome = () => (
   <div style={{ width: 640, margin: "15px auto" }}>
     <Wrapper>
       <Label currency="$">1000</Label>
@@ -42,4 +44,4 @@ const App = () => (
   </div>
 );
 
-render(<App />, document.getElementById("root"));
+render(<Chrome />, document.getElementById("root"));
