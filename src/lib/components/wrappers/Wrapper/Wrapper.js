@@ -1,13 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Wrapper ({ id, type, pixel, children }) {
+export default function Wrapper ({ id, type, children, ...rest }) {
   return (
-    <div id={id} type={type} pixel={pixel}>
+    <wrapper id={id} type={type} {...rest}>
       {children}
-    </div>
+    </wrapper>
   );
 }
+
+// return (
+//   <div id={id} type={type} pixel={pixel}>
+//     {children}
+//   </div>
+// );
 
 // const Wrapper = props => React.createElement(
 //   'div',

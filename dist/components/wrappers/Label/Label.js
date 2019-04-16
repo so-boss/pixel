@@ -27,7 +27,7 @@ CurrencyValue.defaultProps = {
   multi: 1
 };
 CurrencyValue.propTypes = {
-  quantity: PropTypes.integer,
+  quantity: PropTypes.number,
   joinWith: PropTypes.string,
   children: PropTypes.any
 };

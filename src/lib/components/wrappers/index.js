@@ -13,8 +13,8 @@ export { default as Wrapper } from './Wrapper';
 // export { default as InputSelect } from './InputSelect';
 // export { default as Inputs } from './Inputs';
 export { default as Label } from './Label';
+export { default as Content } from './Content';
 // TODO: Evaluate if Message should be a child of the Output pattern (or at least be typed)
 export { default as Message } from './Message';
 
-// REFACTOR: Interview feels like a container, not a wrapper
-// export { default as Interview } from './Interview';
+

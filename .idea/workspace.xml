@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bcbe4ae7-351a-4a14-a634-594041387f14" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/pixel.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Label/Label.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/components/wrappers/Label/Label.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/containers/Group/Group.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/containers/Group/Group.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/elements/Title/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/elements/Title/Title.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/wrappers/Label/Label.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/wrappers/Label/Label.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/wrappers/Wrapper/Wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/wrappers/Wrapper/Wrapper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/wrappers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/wrappers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/dist/" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileColors">
+    <fileColor scope="Non-Project Files (Material Default)" color="2E3C43" />
+    <fileColor scope="Non-Project Files (Material Darker)" color="323232" />
+    <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
+    <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.53842777">
+      <split-first>
+        <splitter split-orientation="vertical" split-proportion="0.2772998">
+          <split-first>
+            <splitter split-orientation="horizontal" split-proportion="0.29618162">
+              <split-first>
+                <leaf>
+                  <file pinned="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/src/lib/components/wrappers/index.js">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="361">
+                          <caret line="19" selection-start-line="19" selection-end-line="19" />
+                          <folding>
+                            <element signature="n#!!doc" expanded="true" />
+                          </folding>
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file pinned="false" current-in-tab="true">
+                    <entry file="file://$PROJECT_DIR$/src/lib/components/containers/index.js">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state>
+                          <folding>
+                            <element signature="n#!!doc" expanded="true" />
+                          </folding>
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                </leaf>
+              </split-first>
+              <split-second>
+                <splitter split-orientation="horizontal" split-proportion="0.5">
+                  <split-first>
+                    <leaf>
+                      <file pinned="false" current-in-tab="true">
+                        <entry file="file://$PROJECT_DIR$/src/lib/components/index.js">
+                          <provider selected="true" editor-type-id="text-editor">
+                            <state relative-caret-position="89">
+                              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+                              <folding>
+                                <element signature="e#0#49#0" expanded="true" />
+                              </folding>
+                            </state>
+                          </provider>
+                        </entry>
+                      </file>
+                    </leaf>
+                  </split-first>
+                  <split-second>
+                    <leaf>
+                      <file pinned="false" current-in-tab="true">
+                        <entry file="file://$PROJECT_DIR$/src/lib/index.js">
+                          <provider selected="true" editor-type-id="text-editor">
+                            <state>
+                              <caret column="69" selection-start-column="69" selection-end-column="69" />
+                            </state>
+                          </provider>
+                        </entry>
+                      </file>
+                    </leaf>
+                  </split-second>
+                </splitter>
+              </split-second>
+            </splitter>
+          </split-first>
+          <split-second>
+            <splitter split-orientation="vertical" split-proportion="0.51229507">
+              <split-first>
+                <splitter split-orientation="horizontal" split-proportion="0.64408165">
+                  <split-first>
+                    <leaf>
+                      <file pinned="false" current-in-tab="false">
+                        <entry file="file://$PROJECT_DIR$/src/index.js">
+                          <provider selected="true" editor-type-id="text-editor">
+                            <state relative-caret-position="357">
+                              <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+                              <folding>
+                                <element signature="e#0#26#0" expanded="true" />
+                              </folding>
+                            </state>
+                          </provider>
+                        </entry>
+                      </file>
+                      <file pinned="false" current-in-tab="true">
+                        <entry file="file://$PROJECT_DIR$/package.json">
+                          <provider selected="true" editor-type-id="text-editor">
+                            <state relative-caret-position="114">
+                              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+                            </state>
+                          </provider>
+                        </entry>
+                      </file>
+                      <file pinned="false" current-in-tab="false">
+                        <entry file="file://$PROJECT_DIR$/fuse.js">
+                          <provider selected="true" editor-type-id="text-editor">
+                            <state relative-caret-position="304">
+                              <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+                            </state>
+                          </provider>
+                        </entry>
+                      </file>
+                      <file pinned="false" current-in-tab="false">
+                        <entry file="file://$PROJECT_DIR$/src/index.html">
+                          <provider selected="true" editor-type-id="text-editor">
+                            <state relative-caret-position="304">
+                              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+                            </state>
+                          </provider>
+                        </entry>
+                      </file>
+                      <file pinned="false" current-in-tab="false">
+                        <entry file="file://$PROJECT_DIR$/src/lib/components/containers/Group/Group.js">
+                          <provider selected="true" editor-type-id="text-editor">
+                            <state relative-caret-position="532">
+                              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+                              <folding>
+                                <element signature="e#0#45#0" expanded="true" />
+                              </folding>
+                            </state>
+                          </provider>
+                        </entry>
+                      </file>
+                    </leaf>
+                  </split-first>
+                  <split-second>
+                    <leaf>
+                      <file pinned="false" current-in-tab="true">
+                        <entry file="file://$PROJECT_DIR$/src/lib/components/containers/Container/Container.js">
+                          <provider selected="true" editor-type-id="text-editor">
+                            <state relative-caret-position="171">
+                              <caret line="86" column="30" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="30" />
+                              <folding>
+                                <element signature="e#0#50#0" expanded="true" />
+                              </folding>
+                            </state>
+                          </provider>
+                        </entry>
+                      </file>
+                    </leaf>
+                  </split-second>
+                </splitter>
+              </split-first>
+              <split-second>
+                <leaf>
+                  <file pinned="false" current-in-tab="true">
+                    <entry file="file://$PROJECT_DIR$/src/lib/components/elements/Title/Title.js">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="247">
+                          <caret line="35" selection-start-line="35" selection-start-column="3" selection-end-line="38" selection-end-column="5" />
+                          <folding>
+                            <element signature="e#0#42#0" expanded="true" />
+                          </folding>
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file pinned="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/src/lib/components/wrappers/Wrapper/Wrapper.js">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="75">
+                          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+                          <folding>
+                            <element signature="e#0#26#0" expanded="true" />
+                          </folding>
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                </leaf>
+              </split-second>
+            </splitter>
+          </split-second>
+        </splitter>
+      </split-first>
+      <split-second>
+        <splitter split-orientation="horizontal" split-proportion="0.55011475">
+          <split-first>
+            <leaf>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/lib/components/wrappers/Label/Label.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="399">
+                      <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+                      <folding>
+                        <element signature="e#0#41#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <splitter split-orientation="vertical" split-proportion="0.8656519">
+              <split-first>
+                <splitter split-orientation="vertical" split-proportion="0.19470198">
+                  <split-first>
+                    <leaf>
+                      <file pinned="false" current-in-tab="true">
+                        <entry file="file://$PROJECT_DIR$/src/lib/components/wrappers/Content/index.js">
+                          <provider selected="true" editor-type-id="text-editor">
+                            <state relative-caret-position="19">
+                              <caret line="1" selection-start-line="1" selection-end-line="1" />
+                            </state>
+                          </provider>
+                        </entry>
+                      </file>
+                    </leaf>
+                  </split-first>
+                  <split-second>
+                    <leaf>
+                      <file pinned="false" current-in-tab="true">
+                        <entry file="file://$PROJECT_DIR$/src/lib/components/wrappers/Content/Content.js">
+                          <provider selected="true" editor-type-id="text-editor">
+                            <state relative-caret-position="133">
+                              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+                              <folding>
+                                <element signature="e#0#41#0" expanded="true" />
+                              </folding>
+                            </state>
+                          </provider>
+                        </entry>
+                      </file>
+                    </leaf>
+                  </split-second>
+                </splitter>
+              </split-first>
+              <split-second>
+                <leaf>
+                  <file pinned="false" current-in-tab="true">
+                    <entry file="file://$PROJECT_DIR$/src/lib/components/wrappers/Content/Content.pcss">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state>
+                          <caret column="22" selection-start-column="22" selection-end-column="22" />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                </leaf>
+              </split-second>
+            </splitter>
+          </split-second>
+        </splitter>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/lib/components/wrappers/Label/Label.js" />
+        <option value="$PROJECT_DIR$/src/lib/components/wrappers/Content/index.js" />
+        <option value="$PROJECT_DIR$/src/lib/components/wrappers/Content/Content.js" />
+        <option value="$PROJECT_DIR$/src/lib/components/wrappers/Content/Content.pcss" />
+        <option value="$PROJECT_DIR$/src/lib/components/index.js" />
+        <option value="$PROJECT_DIR$/src/lib/index.js" />
+        <option value="$PROJECT_DIR$/src/lib/components/wrappers/index.js" />
+        <option value="$PROJECT_DIR$/src/lib/components/containers/Container/Container.js" />
+        <option value="$PROJECT_DIR$/src/lib/components/containers/Group/Group.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/lib/components/wrappers/Wrapper/Wrapper.js" />
+        <option value="$PROJECT_DIR$/src/fuse.js" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/fuse.js" />
+        <option value="$PROJECT_DIR$/src/lib/components/elements/Title/Title.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <exe-path />
+    <config-path />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="2560" />
+    <option name="height" value="1577" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pixel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pixel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pixel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pixel" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pixel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pixel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="11.12.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib/components/wrappers" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
+    <property name="node.js.selected.package.tslint" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="$USER_HOME$/.nvm/versions/node/v6.6.0/bin/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib/components/wrappers" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.start pixel dev">
+    <configuration name="build pixel" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v10.0.0/bin/node" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start pixel dev" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v10.0.0/bin/node" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.start pixel dev" />
+      <item itemvalue="npm.build pixel" />
+    </list>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bcbe4ae7-351a-4a14-a634-594041387f14" name="Default Changelist" comment="" />
+      <created>1555419906179</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555419906179</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="2560" height="1577" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="npm" side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09499205" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32958305" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32958305" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Git Scope" side_tool="true" />
+      <window_info anchor="right" id="Json Parser" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/lib/components/elements/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/components/wrappers/Label/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/components/wrappers/Label/Label.pcss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/components/wrappers/Label/Label.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/components/wrappers/Content/Content.test.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/components/wrappers/Content/Content.pcss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/components/wrappers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/components/containers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/components/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="69" selection-start-column="69" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/components/containers/Group/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/components/containers/Group/Group.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/components/containers/Container/Container.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="86" column="30" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/components/wrappers/Wrapper/Wrapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/components/wrappers/Content/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/components/wrappers/Content/Content.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/components/containers/Container/Container.pcss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-96" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/app.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/components/elements/Title/Title.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="35" selection-start-line="35" selection-start-column="3" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

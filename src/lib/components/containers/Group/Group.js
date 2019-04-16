@@ -26,7 +26,7 @@ Group.propTypes = {
 
 export default Group;
 
-// export default class Group extends Component {
+// export default class Group extends React.Component {
 //   render () {
 //     const {
 //       children,

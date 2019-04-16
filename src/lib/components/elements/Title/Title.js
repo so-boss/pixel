@@ -3,39 +3,51 @@ import { Wrapper } from './../../index.js'
 import React from "react";
 import PropTypes from 'prop-types';
 
-const title = props => React.createElement(
-  'div',
-  {
-    className: props.className,
-    sz: props.size
-  },
-  props.children
-);
+// const title = props => React.createElement(
+//   'div',
+//   {
+//     className: props.className,
+//     sz: props.size
+//   },
+//   props.children
+// );
 
-const Title = props => React.createElement(
-  Wrapper,
-  {
-    id: props.id,
-    type: props.type, // title
-    pixel: props.pixel
-  },
-  title
-);
+// const Title = props => React.createElement(
+//   Wrapper,
+//   {
+//     id: props.id,
+//     type: props.type, // title
+//     pixel: props.pixel
+//   },
+//   title
+// );
 
-Title.defaultProps = {
-  type: 'title',
-  pixel: 'title'
-};
+const Title = ({children, ...rest}) => (
+  <Wrapper
+    type="title"
+    {...rest}
+  >
+    <title>
+      {children}
+    </title>
+  </Wrapper>
+)
 
-title.propTypes = {
-  className: PropTypes.string,
-  size: PropTypes.string,
-  children: PropTypes.any
-};
+// Title.defaultProps = {
+//   type: 'title',
+//   pixel: 'title'
+// };
+
+// title.propTypes = {
+//   className: PropTypes.string,
+//   size: PropTypes.string,
+//   children: PropTypes.any
+// };
 Title.propTypes = {
-  id: PropTypes.string,
-  type: PropTypes.string,
-  pixel: PropTypes.string
+  // id: PropTypes.string,
+  // type: PropTypes.string,
+  // pixel: PropTypes.string,
+  children: PropTypes.any
 };
 
 export default Title;
