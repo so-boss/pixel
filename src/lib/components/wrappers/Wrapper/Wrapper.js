@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
+import './Wrapper.pcss';
 
 
 export default function Wrapper ({ id, type, children, ...rest }) {

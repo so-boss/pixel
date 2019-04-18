@@ -1,0 +1,6 @@
+@mixin icon {
+  display: inline-block;
+  fill: currentColor;
+}
+
+/*# sourceMappingURL=Icon.pcss.map */

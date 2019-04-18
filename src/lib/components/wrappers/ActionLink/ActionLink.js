@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as PropTypes from 'prop-types';
-
+import './ActionLink.pcss';
 import { Action, Thing } from '@pixel/components/index';
 
 export default class ActionLink extends Component {

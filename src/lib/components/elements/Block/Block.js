@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import * as PropTypes from 'prop-types';
+import './Block.pcss';
 
 import {
   Wrapper, Action, Thing, Icon, Flag, Tag,

@@ -2,6 +2,7 @@ import { Container } from './../../index.js';
 
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
+import './Group.pcss';
 
 const Group = props => React.createElement(
   Container,

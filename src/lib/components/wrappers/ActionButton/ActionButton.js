@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import * as PropTypes from 'prop-types';
+import './ActionButton.pcss';
 import { Action, Button } from '@pixel/components/index';
 
 export default class ActionButton extends Component {

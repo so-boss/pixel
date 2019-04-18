@@ -2,6 +2,7 @@ import { Wrapper, Title } from './../../index.js';
 
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
+import './Container.pcss';
 
 const isObject = function (value) {
   return typeof value === 'object' && typeof value !== 'function' && value !== undefined;

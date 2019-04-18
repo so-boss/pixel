@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import * as PropTypes from 'prop-types';
+import './Input.pcss';
 
 import { Wrapper, Label, Message, InputSelect } from '@pixel/components';
 import { Field, ErrorMessage } from 'formik';

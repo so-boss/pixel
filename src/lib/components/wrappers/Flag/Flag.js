@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import * as PropTypes from 'prop-types';
+import './Flag.pcss';
 
 import { Block } from '@pixel/components';
 

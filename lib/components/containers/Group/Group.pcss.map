@@ -1,0 +1,1 @@
+{"version":3,"sources":["/Group.pcss"],"names":[],"mappings":"AAAA;IACI,oBAAoB;CACvB","file":"lib/components/containers/Group/Group.pcss","sourcesContent":["@mixin group {\n    @mixin group_header;\n}\n"]}

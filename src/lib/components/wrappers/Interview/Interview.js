@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import * as PropTypes from 'prop-types';
+import './Interview.pcss';
 
 import { Wrapper, Group } from '@pixel/components';
 

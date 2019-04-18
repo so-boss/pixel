@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
+import './Thing.pcss';
 
 const Thing = props => React.createElement(
   'div',

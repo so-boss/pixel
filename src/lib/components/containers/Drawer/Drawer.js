@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import * as PropTypes from 'prop-types';
+import './Drawer.pcss';
 
 import { Container } from '@pixel/components';
 

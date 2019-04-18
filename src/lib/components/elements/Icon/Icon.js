@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import * as PropTypes from 'prop-types';
-import Icons from './sprite.svg';
+import './Icon.pcss';
+//import Icons from './sprite.svg';
 
 export default class Icon extends Component {
   render () {

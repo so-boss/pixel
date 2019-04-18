@@ -2,7 +2,7 @@ import { Wrapper } from './../../index.js'
 
 import * as React from 'react';
 import * as PropTypes from 'prop-types'
-import 'Title.pcss';
+import './Title.pcss';
 
 // const title = props => React.createElement(
 //   'div',

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import * as PropTypes from 'prop-types';
+import './InputSelect.pcss';
 
 import { Wrapper } from '@pixel/components';
 import Select from 'react-select';

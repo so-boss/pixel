@@ -1,0 +1,9 @@
+wrapper[type=title] {
+  title {
+    @mixin font color, grey;
+    @mixin font size, m;
+    @mixin font weight, bold;
+  }
+}
+
+/*# sourceMappingURL=Title.pcss.map */
