@@ -13,7 +13,6 @@ _playground
 .tmp
 .vscode
 build
-dist
 node_modules
 npm-debug.log*
 playground
