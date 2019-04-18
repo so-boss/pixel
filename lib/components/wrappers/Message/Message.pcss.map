@@ -1,1 +1,0 @@
-{"version":3,"sources":["/Message.pcss"],"names":[],"mappings":"AAAA;;CAEC","file":"lib/components/wrappers/Message/Message.pcss","sourcesContent":["@mixin message {\n\n}\n"]}

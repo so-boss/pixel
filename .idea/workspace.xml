@@ -3,161 +3,32 @@
   <component name="ChangeListManager">
     <list default="true" id="bcbe4ae7-351a-4a14-a634-594041387f14" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/containers/Container/Container.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/containers/Container/Container.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/containers/Container/Container.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/containers/Container/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/containers/Drawer/Drawer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/containers/Drawer/Drawer.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/containers/Drawer/Drawer.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/containers/Drawer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/containers/Group/Group.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/containers/Group/Group.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/containers/Group/Group.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/containers/Group/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/containers/Page/Page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/containers/Page/Page.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/containers/Page/Page.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/containers/Page/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/containers/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Block/Block.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Block/Block.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Block/Block.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Block/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Button/Button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Button/Button.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Button/Button.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Button/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Field/Field.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Field/Field.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Field/Field.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Field/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Icon/Icon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Icon/Icon.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Icon/Icon.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Icon/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Icon/sprite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Icon/ui.inventory.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Thing/Thing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Thing/Thing.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Thing/Thing.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Thing/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Title/Title.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Title/Title.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Title/Title.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/Title/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/elements/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/uis/UI/UI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/uis/UI/UI.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/uis/UI/UI.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/uis/UI/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/uis/inventory.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Action/Action.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Action/Action.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Action/Action.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Action/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/ActionBlock/ActionBlock.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/ActionBlock/ActionBlock.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/ActionBlock/ActionBlock.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/ActionBlock/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/ActionButton/ActionButton.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/ActionButton/ActionButton.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/ActionButton/ActionButton.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/ActionButton/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/ActionLink/ActionLink.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/ActionLink/ActionLink.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/ActionLink/ActionLink.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/ActionLink/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Content/Content.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Content/Content.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Content/Content.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Content/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Flag/Flag.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Flag/Flag.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Flag/Flag.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Flag/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Input/Input.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Input/Input.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Input/Input.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Input/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Input/input_spec.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/InputSelect/InputSelect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/InputSelect/InputSelect.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/InputSelect/InputSelect.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/InputSelect/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Inputs/Inputs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Inputs/Inputs.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Inputs/Inputs.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Inputs/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Interview/Interview.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Interview/Interview.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Interview/Interview.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Interview/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Label/Label.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Label/Label.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Label/Label.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Label/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Message/Message.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Message/Message.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Message/Message.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Message/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Tag/Tag.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Tag/Tag.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Tag/Tag.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Tag/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Wrapper/Wrapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Wrapper/Wrapper.pcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Wrapper/Wrapper.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/Wrapper/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/wrappers/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/helpers/dollarj.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/shared-styles/maps/color.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/shared-styles/maps/font.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/shared-styles/maps/px.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/shared-styles/mixins/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/shared-styles/tokens.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/shared-styles/variables.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/utils/uis.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/vendor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pixel_quantum.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/pixel_quantum.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fuse.js" beforeDir="false" afterPath="$PROJECT_DIR$/fuse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/containers/Container/Container.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/containers/Container/Container.pcss.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/containers/Group/Group.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/containers/Group/Group.pcss.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/elements/Button/Button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/elements/Button/Button.pcss.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/elements/Field/Field.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/elements/Field/Field.pcss.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/elements/Icon/Icon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/elements/Icon/Icon.pcss.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/elements/Thing/Thing.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/elements/Thing/Thing.pcss.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/elements/Title/Title.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/elements/Title/Title.pcss.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/wrappers/Content/Content.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/wrappers/Content/Content.pcss.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/wrappers/Label/Label.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/wrappers/Label/Label.pcss.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/wrappers/Message/Message.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/wrappers/Message/Message.pcss.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/wrappers/Wrapper/Wrapper.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/wrappers/Wrapper/Wrapper.pcss.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainContent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/containers/Container/Container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/containers/Container/Container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/containers/Drawer/Drawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/containers/Drawer/Drawer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/containers/Group/Group.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/containers/Group/Group.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/elements/Block/Block.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/elements/Block/Block.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/elements/Button/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/elements/Button/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/elements/Field/Field.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/elements/Field/Field.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/elements/Field/Field.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/elements/Field/Field.pcss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/elements/Icon/Icon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/elements/Icon/Icon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/elements/Thing/Thing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/elements/Thing/Thing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/elements/Title/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/elements/Title/Title.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/wrappers/Action/Action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/wrappers/Action/Action.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/wrappers/ActionBlock/ActionBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/wrappers/ActionBlock/ActionBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/wrappers/ActionButton/ActionButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/wrappers/ActionButton/ActionButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/wrappers/ActionLink/ActionLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/wrappers/ActionLink/ActionLink.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/wrappers/Content/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/wrappers/Content/Content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/wrappers/Flag/Flag.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/wrappers/Flag/Flag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/wrappers/Input/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/wrappers/Input/Input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/wrappers/InputSelect/InputSelect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/wrappers/InputSelect/InputSelect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/wrappers/Inputs/Inputs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/wrappers/Inputs/Inputs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/wrappers/Interview/Interview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/wrappers/Interview/Interview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/wrappers/Label/Label.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/wrappers/Label/Label.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/wrappers/Message/Message.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/wrappers/Message/Message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/wrappers/Tag/Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/wrappers/Tag/Tag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/wrappers/Wrapper/Wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/wrappers/Wrapper/Wrapper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/tsconfig.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -182,8 +53,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/fuse.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
-                  <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+                <state relative-caret-position="374">
+                  <caret line="79" column="37" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
                 </state>
               </provider>
             </entry>
@@ -197,8 +68,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/package.json">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="114">
-                      <caret line="6" column="23" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="23" />
+                    <state relative-caret-position="95">
+                      <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
                     </state>
                   </provider>
                 </entry>
@@ -289,7 +160,6 @@
         <option value="$PROJECT_DIR$/src/lib/components/wrappers/index.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/fuse.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/App.pcss" />
         <option value="$PROJECT_DIR$/src/index.ts" />
         <option value="$PROJECT_DIR$/src/lib/components/wrappers/Wrapper/Wrapper.js" />
@@ -321,6 +191,7 @@
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/tsconfig.json" />
         <option value="$PROJECT_DIR$/fuse.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -493,6 +364,7 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
+        <option value="$PROJECT_DIR$/dist/index.js" />
         <option value="$PROJECT_DIR$/dist/index.js" />
       </list>
     </option>
@@ -808,17 +680,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/fuse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="23" />
+        <state relative-caret-position="374">
+          <caret line="79" column="37" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fuse.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+        <state relative-caret-position="95">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
         </state>
       </provider>
     </entry>

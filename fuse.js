@@ -68,6 +68,14 @@ context(class {
       .dest("dist/")
       .exec();
   }
+  async copyLib() {
+    await src("./**", {
+        base: './src'
+      })
+      .dest("dist/")
+      .exec();
+  }
+
   createBundle(fuse) {
     const app = fuse.bundle("pixel");
     if(!this.isProduction) {
@@ -101,7 +109,7 @@ context(class {
 //     .dest("./dist");
 // });
 
-// task("copy-src", () => src("./**", { base: './src' }).dest("dist/"));
+//task("copy-src", () => src("./**", { base: './src' }).dest("dist/"));
 // task("copy-pkg", () => src("./package.json").dest("dist/"));
 
 // task("default", ["clean"], async context => {
@@ -133,6 +141,7 @@ task("dist", async context => {
   const fuse = context.getConfig();
   fuse.dev(); // Remove this later
   context.createBundle(fuse);
+  await context.copyLib();
   await fuse.run();
 });
 

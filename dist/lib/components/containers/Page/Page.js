@@ -1,0 +1,40 @@
+import React, { Component } from 'react';
+import * as PropTypes from 'prop-types';
+
+import { Container } from '@pixel/components';
+
+export default class Page extends Component {
+  render () {
+    const {
+      children,
+      tag,
+      slots,
+      ...rest
+    } = this.props;
+
+    return (
+      <Container
+        tag={tag}
+        slots={slots}
+        {...rest}
+      >
+        {children}
+      </Container>
+    );
+  }
+}
+
+Page.defaultProps = {
+  tag: 'page',
+  slots: {
+    footer: {
+      include: true,
+    },
+  },
+};
+
+Page.propTypes = {
+  tag: PropTypes.string,
+  type: PropTypes.string,
+  slots: PropTypes.object,
+};

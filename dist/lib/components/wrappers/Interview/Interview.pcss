@@ -1,0 +1,17 @@
+wrapper[type=interview] {
+    overflow:hidden;
+    > wrapper {
+        @mixin flex;
+        > group {
+            @mixin hide;
+
+            &[type=question] {
+
+            }
+
+            &[active=true] {
+                display:block;
+            }
+        }
+    }
+}

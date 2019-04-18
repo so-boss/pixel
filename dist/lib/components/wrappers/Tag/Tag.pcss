@@ -1,0 +1,17 @@
+@mixin tag {
+    @mixin theme grey;
+
+    & block {
+        > wrapper {
+            @mixin flex;
+            > wrapper {
+                @mixin block_col_2 {
+                    justify-content: center;
+                    & > thing:nth-child(1) {
+                        @mixin line 1, tag;
+                    }
+                };
+            }
+        }
+    }
+}

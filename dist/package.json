@@ -1,10 +1,10 @@
 {
   "name": "pixel",
-  "version": "0.1.75",
+  "version": "0.1.86",
   "description": "Pixel Design System's Web components for build stellar UI",
   "private": true,
   "main": "src/lib/components/index.js",
-  "module": "dist/index.js",
+  "module": "dist/pixel.js",
   "files": [
     "dist"
   ],
