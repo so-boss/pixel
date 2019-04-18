@@ -20,23 +20,21 @@ context(class {
       homeDir:"src",
       output:"dist/$name.js", //$name.js
       hash:false,//this.isProduction,
-      sourceMaps: { inline: false },
+      sourceMaps: { inline: true },
       target:"browser",
       plugins:[
         WebIndexPlugin({
           template:"src/index.html"
         }),
         [
-          PostCSSPlugin([require("postcss-import")],{
-            sourceMaps: true
-          }),
+          PostCSSPlugin([require("postcss-import")]),
           CSSResourcePlugin({
             dist:"dist/css-resources"
           }),
           CSSPlugin({
-            group: 'pixel.css',
-            outFile: `dist/pixel.css`,
-            inject: true
+            // group: 'pixel.css',
+            // outFile: `dist/pixel.css`,
+            // inject: true
           })
         ],
         this.isProduction && QuantumPlugin({
@@ -80,9 +78,9 @@ context(class {
     const app = fuse.bundle("pixel");
     if(!this.isProduction) {
       app.watch();
-      app.hmr();
+      //app.hmr();
     }
-    app.instructions(">index.tsx");
+    app.instructions(">lib/index.js");
     return app;
   }
 
@@ -93,7 +91,7 @@ context(class {
       .bundle("pixel")
       .watch()
       .completed(proc => proc.start())
-      .instructions(">index.tsx");
+      .instructions(">lib/index.js");
     fuse.run();
   }
 });
@@ -139,7 +137,7 @@ task("dist", async context => {
   await context.prepareDistFolder();
 
   const fuse = context.getConfig();
-  fuse.dev(); // Remove this later
+  //fuse.dev(); // Remove this later
   context.createBundle(fuse);
   await context.copyLib();
   await fuse.run();

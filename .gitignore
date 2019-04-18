@@ -12,6 +12,7 @@ _playground
 .settings
 .tmp
 .vscode
+.idea
 build
 node_modules
 npm-debug.log*
