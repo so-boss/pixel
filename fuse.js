@@ -20,12 +20,12 @@ context(class {
       homeDir:"src",
       output:"dist/$name.js", //$name.js
       hash:false,//this.isProduction,
-      sourceMaps: { inline: true },
-      target:"browser",
+      //sourceMaps: { inline: true },
+      target:"browser@es6",
       plugins:[
-        WebIndexPlugin({
-          template:"src/index.html"
-        }),
+        // WebIndexPlugin({
+        //   template:"src/index.html"
+        // }),
         [
           PostCSSPlugin([require("postcss-import")]),
           CSSResourcePlugin({
@@ -80,7 +80,7 @@ context(class {
       app.watch();
       //app.hmr();
     }
-    app.instructions(">lib/index.js");
+    app.instructions("> index.tsx");
     return app;
   }
 
@@ -91,45 +91,15 @@ context(class {
       .bundle("pixel")
       .watch()
       .completed(proc => proc.start())
-      .instructions(">lib/index.js");
+      .instructions("> lib/index.js");
     fuse.run();
   }
 });
 
-// task("clean", async context => {
-//   await src("./dist")
-//     .clean("dist/")
-//     .exec();
-// });
-//
-// task("watch:images", async context => {
-//   await watch("**/*.+(svg|png|jpg|gif)", {base: "./src"})
-//     .dest("./dist");
-// });
-
-//task("copy-src", () => src("./**", { base: './src' }).dest("dist/"));
-// task("copy-pkg", () => src("./package.json").dest("dist/"));
-
-// task("default", ["clean"], async context => {
-//   bumpVersion("package.json", { type: "patch" });
-//   const fuse = context.getConfig();
-//   fuse.dev();
-//   context.createBundle(fuse);
-//   await fuse.run();
-// });
 task("default", async context => {
   await context.clean();
   await context.development();
 });
-
-// task("dist", ["clean"], async context => {
-//   bumpVersion("package.json", { type: "patch" });
-//   context.isProduction = true;
-//   const fuse = context.getConfig();
-//   fuse.dev(); // Remove this later
-//   context.createBundle(fuse);
-//   await fuse.run();
-// });
 
 task("dist", async context => {
   context.isProduction = true;
@@ -142,43 +112,3 @@ task("dist", async context => {
   await context.copyLib();
   await fuse.run();
 });
-
-
-/*
-
-const fuse =  FuseBox.init({
-  homeDir : "./src",
-  output : "./dist/$name.js",
-  useTypescriptCompiler : false,
-  plugins: [
-    [
-      PostCSSPlugin([
-        require("postcss-import"),
-        // You can optionally pass options to the plugins
-        //require("postcss-url")({ url: "rebase" }),
-        require("postcss-nested"),
-      ]),
-      CSSPlugin(),
-    ],
-    CSSPlugin(),
-    SVGPlugin(),
-    WebIndexPlugin({
-      template : "src/index.html"
-    })
-  ]
-});
-
-fuse.dev();
-
-fuse
-  .bundle("vendor")
-  .instructions("~ index.js");
-
-fuse
-  .bundle("app")
-  .instructions(" > index.js")
-  .watch()
-  .hmr();
-
-fuse.run();
-*/

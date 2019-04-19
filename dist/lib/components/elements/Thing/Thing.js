@@ -2,28 +2,33 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import './Thing.pcss';
 
-const Thing = props => React.createElement(
-  'div',
-  {
-    id: props.id,
-    type: props.type,
-    pixel: props.pixel,
-  },
-  props.children
-);
+export default function Thing ({children, ...rest}) {
+  return (
+    <thing {...rest}>
+      {children}
+    </thing>
+  );
+}
+// const Thing = props => React.createElement(
+//   'div',
+//   {
+//     id: props.id,
+//     type: props.type,
+//     pixel: props.pixel,
+//   },
+//   props.children
+// );
 
-Thing.defaultProps = {
-  pixel: 'thing',
-};
+// Thing.defaultProps = {
+//   pixel: 'thing',
+// };
 
 Thing.propTypes = {
-  id: PropTypes.string,
-  type: PropTypes.string,
-  pixel: PropTypes.string,
+  // id: PropTypes.string,
+  // type: PropTypes.string,
+  // pixel: PropTypes.string,
   children: PropTypes.any
 };
-
-export default Thing;
 
 // export default class Thing extends Component {
 //   render () {

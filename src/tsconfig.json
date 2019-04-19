@@ -1,15 +1,13 @@
 {
   "compilerOptions": {
     "module": "CommonJS",
-    "target": "ES2018",
+    "target": "es6",
     "jsx": "react",
     "baseUrl": ".",
     "importHelpers": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
     "moduleResolution": "node",
     "isolatedModules": false,
-    "experimentalDecorators": true,
+    "experimentalDecorators": false,
     "emitDecoratorMetadata": true,
     "declaration": true,
     "noImplicitAny": true,

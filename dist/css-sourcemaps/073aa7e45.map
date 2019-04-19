@@ -1,1 +1,0 @@
-{"version":3,"sources":["/Icon.pcss"],"names":[],"mappings":"AAAA;EACE,sBAAsB;EACtB,mBAAmB;CACpB","file":"lib/components/elements/Icon/Icon.pcss","sourcesContent":["@mixin icon {\n  display: inline-block;\n  fill: currentColor;\n}\n"]}

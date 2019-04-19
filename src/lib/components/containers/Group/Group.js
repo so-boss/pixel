@@ -4,15 +4,25 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import './Group.pcss';
 
-const Group = props => React.createElement(
-  Container,
-  {
-    tag: props.tag,
-    id: props.id,
-    type: props.type
-  },
-  props.children
-);
+export default function Group({children, ...rest}) {
+  return (
+    <Container
+      tag={tag}
+      {...rest}
+    >
+      {children}
+    </Container>
+  );
+}
+// const Group = props => React.createElement(
+//   Container,
+//   {
+//     tag: props.tag,
+//     id: props.id,
+//     type: props.type
+//   },
+//   props.children
+// );
 
 Group.defaultProps = {
   tag: 'group',
@@ -24,8 +34,6 @@ Group.propTypes = {
   type: PropTypes.string,
   children: PropTypes.any
 };
-
-export default Group;
 
 // export default class Group extends React.Component {
 //   render () {

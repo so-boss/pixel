@@ -1,6 +1,20 @@
-import { Title, Thing, Field } from "./elements";
-import { Wrapper, Label, Message, Content } from "./wrappers";
-import { Container, Group } from "./containers";
+import {
+    Title,
+    Thing,
+    Field
+} from "./elements";
+
+import {
+    Wrapper,
+    Label,
+    Message,
+    Content
+} from "./wrappers";
+
+import {
+    Container,
+    Group
+} from "./containers";
 
 export {
     // ELEMENTS

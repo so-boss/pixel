@@ -1,1 +1,0 @@
-{"version":3,"sources":["/Title.pcss"],"names":[],"mappings":"AAAA;EACE;IACE,wBAAwB;IACxB,oBAAoB;IACpB,yBAAyB;GAC1B;CACF","file":"lib/components/elements/Title/Title.pcss","sourcesContent":["wrapper[type=title] {\n  title {\n    @mixin font color, grey;\n    @mixin font size, m;\n    @mixin font weight, bold;\n  }\n}\n"]}

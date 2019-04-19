@@ -1,4 +1,33 @@
-import { Title, Thing, Wrapper, Label, Message, Field, Content, Group } from "./components";
+import {
+  // ELEMENTS
+  Title,
+  Thing,
+  Field,
 
-// import TextInput from "./TextInput";
-export { Title, Thing, Wrapper, Label, Message, Field, Content, Group };
+  // WRAPPERS
+  Wrapper,
+  Label,
+  Message,
+  Content,
+
+  //CONTAINERS
+  Container,
+  Group
+} from "./components";
+
+export {
+  // ELEMENTS
+  Title,
+  Thing,
+  Field,
+
+  // WRAPPERS
+  Wrapper,
+  Label,
+  Message,
+  Content,
+
+  //CONTAINERS
+  Container,
+  Group
+};

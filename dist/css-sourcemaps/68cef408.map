@@ -1,1 +1,0 @@
-{"version":3,"sources":["/Label.pcss"],"names":[],"mappings":"AAAA;;CAEC","file":"lib/components/wrappers/Label/Label.pcss","sourcesContent":["@mixin label {\n\n}\n"]}

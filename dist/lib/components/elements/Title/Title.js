@@ -23,55 +23,22 @@ import './Title.pcss';
 //   title
 // );
 
-const Title = ({children, ...rest}) => (
-  <Wrapper
-    type="title"
-    {...rest}
-  >
-    <title>
-      {children}
-    </title>
-  </Wrapper>
-)
+export default function Title ({children, ...rest}) {
+  return (
+    <Wrapper
+      type="title"
+      {...rest}
+    >
+      <title>
+        {children}
+      </title>
+    </Wrapper>
+  );
+}
 
-// Title.defaultProps = {
-//   type: 'title',
-//   pixel: 'title'
-// };
-
-// title.propTypes = {
-//   className: PropTypes.string,
-//   size: PropTypes.string,
-//   children: PropTypes.any
-// };
 Title.propTypes = {
   // id: PropTypes.string,
   // type: PropTypes.string,
   // pixel: PropTypes.string,
   children: PropTypes.any
 };
-
-export default Title;
-
-// export default class Title extends Component {
-//   render () {
-//     const {
-//       children,
-//       ...rest
-//     } = this.props;
-//
-//     /*
-//         <Title>A Text Title</Title>
-//      */
-//     return (
-//       <Wrapper
-//         type="title"
-//         {...rest}
-//       >
-//         <title>
-//           {children}
-//         </title>
-//       </Wrapper>
-//     );
-//   }
-// }
