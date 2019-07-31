@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './Flag.pcss';
 
-import { Block } from '@pixel/components';
+import { Block } from '../../';
 
 export default class Flag extends Component {
   render () {

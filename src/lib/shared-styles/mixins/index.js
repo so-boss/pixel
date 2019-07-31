@@ -1,12 +1,14 @@
+const path = require('path');
+
 /* eslint-disable no-trailing-spaces */
 // TODO: $j needs to become a module
-const $j = require("@pixel/helpers/dollarj"),
+const $j = require("../../helpers/dollarj"),
   _ = require("lodash");
 
-const postcss = require('postcss');
-const colors = require('@pixel/shared-styles/maps/color');
-const fonts = require('@pixel/shared-styles/maps/font');
-const px = require('@pixel/shared-styles/maps/px');
+//const postcss = require('postcss');
+const colors = require('../maps/color');
+const fonts = require('../maps/font');
+const px = require('../maps/px');
 
 const mixins = {
   /*
@@ -599,8 +601,8 @@ const mixins = {
     rules['&[type=header]'] = {
       '@mixin-content': {},
       '& > [type=title]': {
-        margin:px.group.header.title.margin,
-      },
+        margin:px.group.header.title.margin
+      }
     };
 
     return rules;

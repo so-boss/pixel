@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './Interview.pcss';
 
-import { Wrapper, Group } from '@pixel/components';
+import { Wrapper, Group } from '../../';
 
 const Step = ({
   index, groupType, children, step,

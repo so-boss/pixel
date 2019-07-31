@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, {Component} from 'react';
 
-import { Wrapper } from '@pixel/components';
+import {Wrapper} from '../../';
 import Select from 'react-select';
 
 const customStyles = {

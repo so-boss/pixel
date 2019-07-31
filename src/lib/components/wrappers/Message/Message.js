@@ -2,6 +2,7 @@ import { Wrapper } from './../../index.js';
 
 import React from "react";
 import PropTypes from 'prop-types';
+import './Message.pcss';
 
 const message = props => React.createElement(
   'div',

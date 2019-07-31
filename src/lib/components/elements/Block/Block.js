@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import './Block.pcss';
+
 import {
   Wrapper, Action, Thing, Icon, Flag, Tag,
-} from '@pixel/components';
+} from '../../';
 
 const _ = require('lodash');
 
@@ -14,6 +16,7 @@ function Line ({ children }) {
     </Thing>
   );
 }
+
 
 function Arrow ({ type }) {
   const arrows = {

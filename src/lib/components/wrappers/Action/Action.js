@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './Action.pcss';
 
 export default class Action extends Component {
   constructor (props) {

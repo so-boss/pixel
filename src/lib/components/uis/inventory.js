@@ -19,11 +19,11 @@ import {
   Title,
   Inputs,
   InputSelect,
-} from '@pixel/components';
+} from '../';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 
 const _ = require('lodash');
-const __ = require('@pixel/utils/uis.js');
+const __ = require('../../utils/uis.js');
 
 const config = function (...props) {
   return __.merge(...props);
@@ -879,6 +879,6 @@ uis.fields = {
 
 
 // TODO: Explore & Finalize how/where to store inventories
-uis.icon = require('@pixel/components/elements/Icon/ui.inventory.js');
+uis.icon = require('../elements/Icon/ui.inventory.js');
 
-module.exports = uis;
+export {uis};

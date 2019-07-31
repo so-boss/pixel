@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './Input.pcss';
 
-import { Wrapper, Label, Message, InputSelect } from '@pixel/components';
+import { Wrapper, Label, Message, InputSelect } from '../../';
 import { Field, ErrorMessage } from 'formik';
-import { FormContext } from '@pixel/components/wrappers/Inputs/Inputs.js';
+import { FormContext } from '../../wrappers/Inputs/Inputs.js';
 
 function handleKeypress (e) {
   let state;

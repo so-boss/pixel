@@ -1,0 +1,110 @@
+/**
+ * Do not edit directly
+ * Generated on Wed, 15 May 2019 06:07:00 GMT
+ */
+
+:root {
+ --px-action-button-padding-top: 3gr; /* PIXEL patterns suggest that vertical alignment uses align-items:center vs padding */
+ --px-action-button-padding-bottom: 3gr;
+ --px-block-column-1-width-xs: 3gr;
+ --px-block-column-1-width-s: 5gr;
+ --px-block-column-1-width-m: 8gr;
+ --px-block-column-1-width-l: 11gr;
+ --px-block-column-3-width-min: 5gr;
+ --px-block-column-3-margin-all: 0; /* PROPOSAL: instead of none, would reset make more sense? */
+ --px-block-column-3-margin-left: 1gr;
+ --px-block-column-3-padding-all: 0;
+ --px-block-line-margin-all: 0;
+ --px-block-line-margin-bottom: 1gr;
+ --px-border-radius-default: 3;
+ --px-border-radius-none: 0;
+ --px-border-radius-round: 100;
+ --px-border-radius-s: 3;
+ --px-border-radius-l: 6;
+ --px-border-thickness-default: 1;
+ --px-border-thickness-none: 0;
+ --px-border-thickness-s: 1;
+ --px-border-thickness-m: 2;
+ --px-border-thickness-l: 3;
+ --px-button-height-default: 6gr;
+ --px-button-height-m: 6gr;
+ --px-button-padding-right: 3gr;
+ --px-button-padding-left: 3gr;
+ --px-button-border-radius-all: 3;
+ --px-button-border-thickness: 1;
+ --px-button-border-width-min: 104;
+ --px-button-border-width-max: 200;
+ --px-container-padding-default: 5gr;
+ --px-drawer-padding-right: 5gr;
+ --px-drawer-padding-left: 5gr;
+ --px-drawer-border-radius-bottom-right: 3; /* PROPOSAL: when paired, left points to right points to def */
+ --px-drawer-border-radius-bottom-left: 3;
+ --px-drawer-container-header-padding-top: 5gr;
+ --px-drawer-container-body-padding-top: 5gr;
+ --px-drawer-container-body-padding-bottom: 5gr;
+ --px-drawer-container-footer-height-min: 8gr;
+ --px-drawer-container-footer-border-position-offset: -5gr;
+ --px-field-margin-top: 3gr;
+ --px-field-margin-bottom: 1gr;
+ --px-field-width-min-default: 140;
+ --px-field-width-min-m: 140; /* Thinking that there will be a variety of types of fields each having different dims  */
+ --px-field-label-position-active: 5;
+ --px-field-label-position-inactive: 27;
+ --px-field-input-wrapper-height: 6gr;
+ --px-field-input-wrapper-margin-right: 1gr;
+ --px-field-input-wrapper-border-thickness: 2; /* Is it ok to assume that at this level, thickness won't break down further thickness.value vs. thickness.default.value */
+ --px-field-input-text-border-thickness: 0;
+ --px-field-input-text-padding-top: 6;
+ --px-field-input-text-padding-bottom: 4;
+ --px-field-input-text-mask-position-top: 25;
+ --px-field-input-message-height-min: 3gr; /* Should this ref px.messages DEFAULT or M? */
+ --px-font-size-default: 14; /* implmented as the small font size token */
+ --px-font-size-xs: 12; /* the smallest size of font--must be black color */
+ --px-font-size-s: 14; /* the second smallest size of a font (paragraphs, bodies of text) */
+ --px-font-size-m: 16; /* the middle font size - good for subtitles and promiment messaging */
+ --px-font-size-l: 20; /* the second largest font size */
+ --px-font-size-xl: 24; /* the largest font size - use sparingly */
+ --px-group-container-header-title-margin-bottom: 2gr;
+ --px-icon-width-xs: 2gr;
+ --px-icon-width-s: 3gr;
+ --px-icon-width-m: 5gr;
+ --px-icon-width-l: 7gr;
+ --px-input-wrapper-height-default: 6gr;
+ --px-input-wrapper-height-m: 6gr;
+ --px-input-wrapper-margin-default: 1gr;
+ --px-input-wrapper-border-thickness-default: 1;
+ --px-input-text-position-left: 0;
+ --px-input-text-position-bottom: 0;
+ --px-input-text-margin-all: 0;
+ --px-margin-default: 2gr;
+ --px-margin-none: 0;
+ --px-margin-s: 1gr;
+ --px-margin-m: 2gr;
+ --px-margin-l: 3gr;
+ --px-marker-padding-right: 5gr;
+ --px-marker-padding-left: 5gr;
+ --px-marker-height-default: 4gr;
+ --px-marker-height-m: 4gr;
+ --px-marker-border-radius-all: 100;
+ --px-marker-margin-default: 1gr;
+ --px-marker-margin-left: 1gr;
+ --px-marker-margin-bottom: 1gr;
+ --px-message-height-min-default: 3gr; /* Does every property needs to have a default desigination (deepest level??) */
+ --px-message-height-min-m: 3gr; /* Whats the guideline for when we CANNOT tshirt something (a min value be considered a Medium Min) */
+ --px-padding-default: 5gr;
+ --px-padding-none: 0;
+ --px-padding-s: 3gr;
+ --px-padding-m: 5gr;
+ --px-padding-l: 6gr;
+ --px-padding-xl: 7gr;
+ --px-page-padding-right: 7gr;
+ --px-page-padding-left: 7gr;
+ --px-page-container-header-block-padding-top: 5gr;
+ --px-page-container-header-block-padding-bottom: 5gr;
+ --px-page-container-header-block-border-bottom-thickness: 1;
+ --px-page-container-header-block-border-position-offset: -7gr;
+ --px-page-container-body-margin-top: 3gr;
+ --px-page-container-footer-height-min: 7gr;
+ --px-title-margin-bottom-default: 2gr; /* Another case of do we just define margin value directly margin property or specifcy sizing options? */
+ --px-title-margin-bottom-m: 2gr; /* There will be more than one type of title so makes sense to size */
+}

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './Page.pcss';
 
-import { Container } from '@pixel/components';
+import { Container } from '../../';
 
 export default class Page extends Component {
   render () {

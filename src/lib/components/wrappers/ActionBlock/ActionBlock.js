@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './ActionBlock.pcss';
 
-import { Action, Block, Drawer } from '@pixel/components/index';
+import { Action, Block, Drawer } from '../../';
 
 function PreconfiguredAction ({
   id, drawer, indicatorProps, children, ...props

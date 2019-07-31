@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './UI.pcss';
+import * as inventory from '../../uis/inventory.js';
 
 const _ = require('lodash');
-const uis = require('@pixel/components/uis/inventory.js');
+//const uis = require('../../uis/inventory.js');
+
+const uis = inventory.uis;
 
 const definedUI = function (id, element, props) {
   // this.displayName = 'UI';
@@ -11,6 +15,7 @@ const definedUI = function (id, element, props) {
     packageID = 'def';
   }
 
+  console.log(uis, element)
   return (uis[element][packageID].apply(this, [props]));
 };
 

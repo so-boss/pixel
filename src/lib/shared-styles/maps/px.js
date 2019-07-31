@@ -1,5 +1,4 @@
-const $j = require("@pixel/helpers/dollarj"),
-  _ = require("lodash");
+const _ = require("lodash");
 
 const px = {
   block:{

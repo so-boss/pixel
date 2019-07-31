@@ -1,28 +1,24 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import './Thing.pcss';
 
-const Thing = props => React.createElement(
-  'div',
-  {
-    id: props.id,
-    type: props.type,
-    pixel: props.pixel,
-  },
-  props.children
-);
+export default function Thing ({children, ...rest}) {
+  return (
+    <thing {...rest}>
+      {children}
+    </thing>
+  );
+}
 
 Thing.defaultProps = {
-  pixel: 'thing',
+
 };
 
 Thing.propTypes = {
   id: PropTypes.string,
   type: PropTypes.string,
-  pixel: PropTypes.string,
   children: PropTypes.any
 };
-
-export default Thing;
 
 // export default class Thing extends Component {
 //   render () {

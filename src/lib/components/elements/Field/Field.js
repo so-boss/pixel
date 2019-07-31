@@ -2,6 +2,7 @@ import { Wrapper, Label } from './../../index.js';
 
 import React from "react";
 import PropTypes from 'prop-types';
+import './Field.pcss';
 
 function Field ({ type, value, label }) {
   return (

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './Button.pcss';
 
 export default class Button extends Component {
   renderButton () {

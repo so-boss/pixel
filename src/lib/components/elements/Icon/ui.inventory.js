@@ -1,16 +1,16 @@
 import React from 'react';
 import {
   UI, Page, Wrapper, Interview, Flag, Tag, Action, Block, ActionBlock, ActionButton, ActionLink, Icon, Group, Drawer, Title,
-} from '@pixel/components';
+} from '../../';
 
 const _ = require('lodash');
-const __ = require('@pixel/utils/uis.js');
+const __ = require('../../../utils/uis.js');
 
 const config = function (...props) {
   return __.merge(...props);
 };
 
-const uis = {
+const ui = {
   /*
       <UI.Icon svg="circle-full" />
   */
@@ -78,7 +78,7 @@ const uis = {
         hugeness="xs"
       />
     );
-  },
+  }
 };
 
-module.exports = uis;
+export {ui};

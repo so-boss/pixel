@@ -1,0 +1,48 @@
+/**
+ * Do not edit directly
+ * Generated on Wed, 15 May 2019 06:07:00 GMT
+ */
+
+:root {
+ --color-brand-blue-1: #00338d;
+ --color-brand-blue-2: #0096d6;
+ --color-brand-blue-3: #88cbdf;
+
+ --color-brand-yellow-1: #ffc425;
+ --color-brand-yellow-1-hover: #f2b719;
+ --color-brand-red-1: #d52b1e;
+ --color-brand-red-1-hover: #a61207;
+
+ --color-green-1: #00844d;
+
+ --color-blue-1: #00338d;
+ --color-blue-2: #0096d6;
+ --color-blue-3: #88cbdf;
+ --color-blue-4: #1778d3;
+ --color-blue-5: #015eb6;
+ --color-blue-6: #107ba8;
+ --color-blue-4-hover: #2685de;
+
+ --color-orange-1: #cf4900;
+ --color-yellow-1: #ffc425;
+ --color-yellow-1-hover: #f2b719;
+ --color-red-1: #d52b1e;
+ --color-red-1-hover: #a61207;
+
+ --color-purple-1: #000000;
+ --color-purple-def: #800080;
+
+ --color-grey: #333333;
+ --color-white: #ffffff;
+ --color-black: #222222;
+
+ --color-yoda: #00844d;
+ --color-r-2-d-2: #00338d;
+ --color-saber: #1778d3;
+ --color-saber-hover: #2685de;
+ --color-bb-8: #cf4900;
+ --color-c-3-po: #ffc425;
+ --color-c-3-po-hover: #f2b719;
+ --color-red-leader: #d52b1e;
+ --color-redleader-hover: #a61207;
+}
