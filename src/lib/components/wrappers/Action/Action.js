@@ -46,7 +46,7 @@ Action.propTypes = {
   id: PropTypes.string,
   type: PropTypes.string,
   children: PropTypes.any,
-  indicatorProps: PropTypes.object,
+  indicatorProps: PropTypes.any,
   drawer: PropTypes.string,
 };
 

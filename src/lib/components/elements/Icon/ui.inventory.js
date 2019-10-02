@@ -81,4 +81,4 @@ const ui = {
   }
 };
 
-export {ui};
+module.exports = ui;
