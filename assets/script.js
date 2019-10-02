@@ -1,0 +1,1 @@
+!function(e){function t(){var t=new XMLHttpRequest;t.open("GET","../pixel/assets/icons/sprite.svg"),t.onreadystatechange=function(){if(4===t.readyState){var n=e.body,i=document.createElement("div");i.innerHTML=t.responseText,n.insertBefore(i.firstChild,n.firstChild)}},t.send()}/load/i.test(e.readyState)?t():e.addEventListener("DOMContentLoaded",t)}(document);
