@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
+    "@emotion/stylis": "^0.8.4",
     "babel-loader": "^8.0.6",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",

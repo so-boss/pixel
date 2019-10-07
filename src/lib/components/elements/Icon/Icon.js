@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Icon.pcss';
-import Icons from './sprite.svg';
+import icons from '../../../../../assets/sprite.svg';
 
 export default class Icon extends Component {
   render () {
@@ -12,10 +12,15 @@ export default class Icon extends Component {
 
     /*
       <Icon id='core-auto' hugeness='xs' />
+      <use xlinkHref={`${Icons}#pixel-${id}`} />
    */
     return (
-      <svg className={`icon pixel-${id}`} hugeness={hugeness}>
-        <use xlinkHref={`${Icons}#pixel-${id}`} />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        className={`icon ${id}`}
+        hugeness={hugeness}>
+          <use href={`./sprite.svg#${id}`} />
       </svg>
     );
   }
