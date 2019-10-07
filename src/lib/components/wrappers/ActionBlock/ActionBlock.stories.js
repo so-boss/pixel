@@ -1,5 +1,5 @@
 import React from 'react';
-import { Ayden, Block, Wrapper, Drawer, Interview, UI, Flag, Tag, Action, ActionBlock } from '../../../../../dist/module';
+import { Block, Wrapper, Drawer, Interview, UI, Flag, Tag, Action, ActionBlock } from '../../../../../dist';
 
 export default {
   title: 'Wrappers|Action/Block',

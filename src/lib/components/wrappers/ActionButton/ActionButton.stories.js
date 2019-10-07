@@ -1,5 +1,5 @@
 import React from 'react';
-import { Block, Wrapper, Drawer, Interview, UI, Flag, Tag, Action, ActionButton } from '../../../../../dist/module';
+import { Block, Wrapper, Drawer, Interview, UI, Flag, Tag, Action, ActionButton } from '../../../../../dist';
 
 export default {
   title: 'Wrappers|Action/Button',

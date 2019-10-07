@@ -1,5 +1,5 @@
 import React from 'react';
-import { Block, Wrapper, Drawer, Interview, Group, UI, Flag, Tag, Action, ActionBlock } from '../../../../../dist/module';
+import { Block, Wrapper, Drawer, Interview, Group, UI, Flag, Tag, Action, ActionBlock } from '../../../../../dist'//'../../../components';
 
 export default {
   title: 'Containers|Drawer',
@@ -9,47 +9,41 @@ export default {
   },
 };
 
-export const drawer1 = () => {
-  return (
-    <Wrapper type="story">
-      <div>
-        <ActionBlock
-          lines={[
-            'New Vehicle',
-            'Replacing 2006 Honda Accord',
-          ]}
-        >
-        <Drawer>
-          {{
-            body: (
-              <Interview id="removeDriver">
-                {{
-                  header: 'Why are you removing Emily from your policy?',
-                  body: 'select reason',
-                }}
-                {{
-                  header: 'Why are you removing Emily from your policy?',
-                  body: 'select reason',
-                }}
-                {{
-                  header: 'Why are you removing Emily from your policy?',
-                  body: 'select reason',
-                }}
-              </Interview>
-            ),
-            footer: (
-              <UI
-                element="action"
-                id="interview_nav"
-              />
-            ),
-          }}
-        </Drawer>
-        </ActionBlock>
-      </div>
-    </Wrapper>
-  )
-};
+export const drawer1 = () => (
+    <ActionBlock
+      lines={[
+        'New Vehicle',
+        'Replacing 2006 Honda Accord',
+      ]}
+    >
+      <Drawer>
+        {{
+          body: (
+            <Interview id="removeDriver">
+              {{
+                header: 'Why are you removing Emily from your policy?',
+                body: 'select reason',
+              }}
+              {{
+                header: 'Why are you removing Emily from your policy?',
+                body: 'select reason',
+              }}
+              {{
+                header: 'Why are you removing Emily from your policy?',
+                body: 'select reason',
+              }}
+            </Interview>
+          ),
+          footer: (
+            <UI
+              element="action"
+              id="interview_nav"
+            />
+          ),
+        }}
+      </Drawer>
+    </ActionBlock>
+)
 drawer1.story = {
   name: 'Horizontal Workflow'
 };

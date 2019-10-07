@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Block, Wrapper, Flag, Tag } from '../../../../../dist/module';
+import { Block, Wrapper, Flag, Tag } from '../../../../../dist';//'../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
 export default {
