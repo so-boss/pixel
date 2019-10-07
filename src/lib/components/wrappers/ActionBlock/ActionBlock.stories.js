@@ -12,7 +12,6 @@ export default {
 export const ab1 = () => {
   return (
     <Wrapper type="story">
-      <Ayden />
       <div>
         <ActionBlock
           id="addDriver"

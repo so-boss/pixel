@@ -719,14 +719,15 @@ const mixins = {
       mixins.action(mixin, 'text')
   */
   action(mixin, type) {
-    var rules = {
+    var rules = {};
+    rules['action'] = {
       '@mixin-content': {}
-    };
+    }
 
     return $j.methods(type, {
       'text': function() {
         return _.merge(
-          rules,
+          rules['action'],
           mixins.font(mixin, 'weight', 'bold'),
           mixins.font(mixin, 'color', 'saber'),
           mixins.cursor(mixin, 'pointer'),
@@ -737,7 +738,7 @@ const mixins = {
       },
       undefined: function() {
         return _.merge(
-          rules,
+          rules['action'],
           mixins.element(mixin),
         );
       },

@@ -27,3 +27,5 @@ yarn-error.log*
 dist
 .idea
 /yarn.lock
+.presets.js.icloud
+/stories/.index.stories.js.icloud

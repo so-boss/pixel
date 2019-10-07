@@ -1,7 +1,8 @@
 //const $j = require("../../../js/helpers/dollarj");
 //const _merge = require('lodash.merge');
+const _ = require("lodash");
 
-module.exports = {
+const px = {
   block:{
     col_1: {
       width:{
@@ -158,13 +159,14 @@ module.exports = {
     },
   },
 }
-// px.flag = _merge(
-//   px.flagtag,
-//   {},
-// );
-//
-// px.tag = _merge(
-//   px.flagtag,
-//   {},
-// );
-//
+px.flag = _.merge(
+  px.flagtag,
+  {},
+);
+
+px.tag = _.merge(
+  px.flagtag,
+  {},
+);
+
+module.exports = px;
