@@ -62,7 +62,6 @@ export const ab2 = () => {
     </Wrapper>
   )
 };
-
 ab2.story = {
   name: 'Arrow Icon (rt align)'
 };
@@ -88,7 +87,6 @@ export const ab3 = () => {
     </Wrapper>
   )
 };
-
 ab3.story = {
   name: 'Action Label (rt align)'
 };
