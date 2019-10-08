@@ -5,9 +5,9 @@ import {withKnobs, text} from "@storybook/addon-knobs";
 export default {
   title: 'UI|Blocks',
   //addDecorator:withKnobs,
-  parameters: {
-    component: UI,
-  },
+  // parameters: {
+  //   component: UI,
+  // },
 };
 export const newVehicle = () => (
   <Wrapper type="story">

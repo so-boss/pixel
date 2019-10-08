@@ -4,9 +4,9 @@ import { Block, Wrapper, Drawer, Interview, Group, UI, Flag, Tag, Action, Action
 export default {
   title: 'Containers|Drawer',
 
-  parameters: {
-    component: Drawer,
-  },
+  // parameters: {
+  //   component: Drawer,
+  // },
 };
 
 export const drawer1 = () => (

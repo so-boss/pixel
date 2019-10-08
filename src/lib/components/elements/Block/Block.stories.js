@@ -6,9 +6,9 @@ import {withKnobs, text} from "@storybook/addon-knobs";
 export default {
   title: 'Elements|Block',
   //addDecorator:withKnobs,
-  parameters: {
-    component: Block,
-  },
+  // parameters: {
+  //   component: Block,
+  // },
 };
 
 

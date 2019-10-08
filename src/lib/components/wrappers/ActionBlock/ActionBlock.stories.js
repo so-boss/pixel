@@ -4,9 +4,9 @@ import { Block, Wrapper, Drawer, Interview, UI, Flag, Tag, Action, ActionBlock }
 export default {
   title: 'Wrappers|Action/Block',
 
-  parameters: {
-    component: ActionBlock,
-  },
+  // parameters: {
+  //   component: ActionBlock,
+  // },
 };
 
 export const ab1 = () => {

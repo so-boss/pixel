@@ -1,5 +1,5 @@
 import React from "react";
-import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag } from '../../../../../dist';//'../../../components';
+import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag, Inputs } from '../../../../../dist';//'../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
 export default {
@@ -86,6 +86,10 @@ export const modifyingMore = () => (
 export const removeDriverReason = () => (
   <Wrapper type="story">
     <div>
+      <UI.Question
+        id="remove_driver_reason"
+        driver="Emily"
+      />
       <ActionBlock
         lines={[
           'Emily Swanker',

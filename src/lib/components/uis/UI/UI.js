@@ -15,7 +15,7 @@ const definedUI = function (id, element, props) {
     packageID = 'def';
   }
 
-  console.log(uis, element)
+  console.log(uis, element, packageID)
   return (uis[element][packageID].apply(this, [props]));
 };
 
