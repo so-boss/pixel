@@ -30,6 +30,8 @@ import './Group.pcss';
 export default class Group extends React.Component {
   render () {
     const {
+      id,
+      type,
       children,
       tag,
       ...rest

@@ -1,6 +1,31 @@
 import React from "react";
-import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag, Inputs } from '../../../../../dist';//'../../../components';
+import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag, Inputs, InputSelect } from '../../../../../dist';//'../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
+
+import { Formik, Form } from 'formik';
+
+import * as Yup from 'yup';
+
+const validationSchema = Yup.object()
+  .shape({
+    name_first: Yup.string()
+      .min(2, 'Too Short!')
+      .max(30, 'Too Long!')
+      .required('Required'),
+    name_last: Yup.string()
+      .min(2, 'Too Short!')
+      .max(30, 'Too Long!')
+      .required('Required'),
+    name_full: Yup.string()
+      .min(2, 'Too Short!')
+      .max(70, 'Too Long!')
+      .required('Required'),
+    email: Yup.string()
+      .email('Invalid email')
+      .required('Required'),
+  });
+
+//export const FormContext = React.createContext();
 
 export default {
   title: 'UI|Interviews',
@@ -13,6 +38,42 @@ export default {
 export const ageLicensed = () => (
   <Wrapper type="story">
     <div>
+      <InputSelect>
+        {{
+          options:[
+            { value: 'spouse', label: 'Spouse/Partner' },
+            { value: 'child', label: 'Child' },
+            { value: 'sibling', label: 'Sibling', selected:true },
+            { value: 'relative', label: 'Relative' },
+            { value: 'roommate', label: 'Roommate' },
+            { value: 'other', label: 'Other' },
+          ]
+        }}
+      </InputSelect>
+      <Inputs
+        id="names"
+        initialValues={{
+          name_first: '',
+          name_last: '',
+          name_middle: '',
+          name_suffix: '',
+          name: '',
+          email: '',
+          address_street: '',
+          address_city: '',
+          address_zip: '',
+          color:['']
+        }}
+        validationSchema={validationSchema}
+      >
+        <UI.Field id="name_full" />
+        <UI.Fields id="name_person"/>
+
+        <UI.Field id="email" />
+
+        <UI.Fields id="lessor" />
+        <UI.Fields id="financier" />
+      </Inputs>
       <Action drawer="expanded">
         <UI.Drawer id="interview">
           <UI.Question
