@@ -10,39 +10,43 @@ export default {
 };
 
 export const drawer1 = () => (
-    <ActionBlock
-      lines={[
-        'New Vehicle',
-        'Replacing 2006 Honda Accord',
-      ]}
-    >
-      <Drawer>
-        {{
-          body: (
-            <Interview id="removeDriver">
-              {{
-                header: 'Why are you removing Emily from your policy?',
-                body: 'select reason',
-              }}
-              {{
-                header: 'Why are you removing Emily from your policy?',
-                body: 'select reason',
-              }}
-              {{
-                header: 'Why are you removing Emily from your policy?',
-                body: 'select reason',
-              }}
-            </Interview>
-          ),
-          footer: (
-            <UI
-              element="action"
-              id="interview_nav"
-            />
-          ),
-        }}
-      </Drawer>
-    </ActionBlock>
+  <Wrapper type="story">
+    <div>
+      <ActionBlock
+        lines={[
+          'New Vehicle',
+          'Replacing 2006 Honda Accord',
+        ]}
+      >
+        <Drawer>
+          {{
+            body: (
+              <Interview id="removeDriver">
+                {{
+                  header: 'Why are you removing Emily from your policy?',
+                  body: 'select reason',
+                }}
+                {{
+                  header: 'Why are you removing Emily from your policy?',
+                  body: 'select reason',
+                }}
+                {{
+                  header: 'Why are you removing Emily from your policy?',
+                  body: 'select reason',
+                }}
+              </Interview>
+            ),
+            footer: (
+              <UI
+                element="action"
+                id="interview_nav"
+              />
+            ),
+          }}
+        </Drawer>
+      </ActionBlock>
+    </div>
+  </Wrapper>
 )
 drawer1.story = {
   name: 'Horizontal Workflow'

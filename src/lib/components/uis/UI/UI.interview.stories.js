@@ -50,30 +50,7 @@ export const ageLicensed = () => (
           ]
         }}
       </InputSelect>
-      <Inputs
-        id="names"
-        initialValues={{
-          name_first: '',
-          name_last: '',
-          name_middle: '',
-          name_suffix: '',
-          name: '',
-          email: '',
-          address_street: '',
-          address_city: '',
-          address_zip: '',
-          color:['']
-        }}
-        validationSchema={validationSchema}
-      >
-        <UI.Field id="name_full" />
-        <UI.Fields id="name_person"/>
 
-        <UI.Field id="email" />
-
-        <UI.Fields id="lessor" />
-        <UI.Fields id="financier" />
-      </Inputs>
       <Action drawer="expanded">
         <UI.Drawer id="interview">
           <UI.Question

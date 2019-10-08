@@ -28,7 +28,7 @@ const validationSchema = Yup.object()
 //export const FormContext = React.createContext();
 
 export default {
-  title: 'UI|Field',
+  title: 'UI|Input/Field',
   //addDecorator:withKnobs,
   // parameters: {
   //   component: UI,
