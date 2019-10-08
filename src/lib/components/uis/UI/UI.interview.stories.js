@@ -38,19 +38,6 @@ export default {
 export const ageLicensed = () => (
   <Wrapper type="story">
     <div>
-      <InputSelect>
-        {{
-          options:[
-            { value: 'spouse', label: 'Spouse/Partner' },
-            { value: 'child', label: 'Child' },
-            { value: 'sibling', label: 'Sibling', selected:true },
-            { value: 'relative', label: 'Relative' },
-            { value: 'roommate', label: 'Roommate' },
-            { value: 'other', label: 'Other' },
-          ]
-        }}
-      </InputSelect>
-
       <Action drawer="expanded">
         <UI.Drawer id="interview">
           <UI.Question
