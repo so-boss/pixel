@@ -35,26 +35,101 @@ export default {
   // },
 };
 
+export const firstName = () => (
+  <Wrapper type="story">
+    <div>
+      <Inputs
+        id="firstName"
+        initialValues={{
+          name_first: ''
+        }}
+        validationSchema={validationSchema}
+      >
+        <UI.Field id="name_first" />
+      </Inputs>
+    </div>
+  </Wrapper>
+);
+export const middleName = () => (
+  <Wrapper type="story">
+    <div>
+      <Inputs
+        id="middleName"
+        initialValues={{
+          name_middle: ''
+        }}
+        validationSchema={validationSchema}
+      >
+        <UI.Field id="name_middle" />
+      </Inputs>
+    </div>
+  </Wrapper>
+);
+export const lastName = () => (
+  <Wrapper type="story">
+    <div>
+      <Inputs
+        id="lastName"
+        initialValues={{
+          name_last: ''
+        }}
+        validationSchema={validationSchema}
+      >
+        <UI.Field id="name_last" />
+      </Inputs>
+    </div>
+  </Wrapper>
+);
 export const fullName = () => (
   <Wrapper type="story">
     <div>
       <Inputs
-        id="names"
+        id="fullName"
         initialValues={{
-          name_first: '',
-          name_last: '',
-          name_middle: '',
-          name_suffix: '',
-          name: '',
-          email: '',
-          address_street: '',
-          address_city: '',
-          address_zip: '',
-          color:['']
+          name: ''
         }}
         validationSchema={validationSchema}
       >
         <UI.Field id="name_full" />
+      </Inputs>
+    </div>
+  </Wrapper>
+);
+export const suffix = () => (
+  <Wrapper type="story">
+    <div>
+      <Inputs
+        id="suffix"
+        initialValues={{
+          name_suffix: ''
+        }}
+        validationSchema={validationSchema}
+      >
+        <UI.Field id="name_suffix" />
+      </Inputs>
+    </div>
+  </Wrapper>
+);
+export const businessName = () => (
+  <Wrapper type="story">
+    <div>
+      <Inputs
+        id="institutionName"
+        initialValues={{
+          name: ''
+        }}
+        validationSchema={validationSchema}
+      >
+        <UI.Field
+          id="name"
+          label="Name of Lessor"
+        />
+
+        <UI.Field
+          id="name"
+          label="Name of Financier"
+          mask="ACME Holdings"
+        />
       </Inputs>
     </div>
   </Wrapper>
@@ -65,16 +140,7 @@ export const email = () => (
       <Inputs
         id="names"
         initialValues={{
-          name_first: '',
-          name_last: '',
-          name_middle: '',
-          name_suffix: '',
-          name: '',
           email: '',
-          address_street: '',
-          address_city: '',
-          address_zip: '',
-          color:['']
         }}
         validationSchema={validationSchema}
       >

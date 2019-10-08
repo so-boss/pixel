@@ -44,13 +44,7 @@ export const personsName = () => (
           name_first: '',
           name_last: '',
           name_middle: '',
-          name_suffix: '',
-          name: '',
-          email: '',
-          address_street: '',
-          address_city: '',
-          address_zip: '',
-          color:['']
+          name_suffix: ''
         }}
         validationSchema={validationSchema}
       >
@@ -59,23 +53,33 @@ export const personsName = () => (
     </div>
   </Wrapper>
 );
-
+export const address = () => (
+  <Wrapper type="story">
+    <div>
+      <Inputs
+        id="address"
+        initialValues={{
+          address_street: '',
+          address_city: '',
+          address_zip: '',
+        }}
+        validationSchema={validationSchema}
+      >
+        <UI.Fields id="address" />
+      </Inputs>
+    </div>
+  </Wrapper>
+);
 export const lessor = () => (
   <Wrapper type="story">
     <div>
       <Inputs
         id="names"
         initialValues={{
-          name_first: '',
-          name_last: '',
-          name_middle: '',
-          name_suffix: '',
           name: '',
-          email: '',
           address_street: '',
           address_city: '',
           address_zip: '',
-          color:['']
         }}
         validationSchema={validationSchema}
       >
@@ -90,16 +94,10 @@ export const financier = () => (
       <Inputs
         id="names"
         initialValues={{
-          name_first: '',
-          name_last: '',
-          name_middle: '',
-          name_suffix: '',
           name: '',
-          email: '',
           address_street: '',
           address_city: '',
           address_zip: '',
-          color:['']
         }}
         validationSchema={validationSchema}
       >

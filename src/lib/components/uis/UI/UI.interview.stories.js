@@ -124,10 +124,6 @@ export const modifyingMore = () => (
 export const removeDriverReason = () => (
   <Wrapper type="story">
     <div>
-      <UI.Question
-        id="remove_driver_reason"
-        driver="Emily"
-      />
       <ActionBlock
         lines={[
           'Emily Swanker',

@@ -472,7 +472,7 @@ uis.question = {
       <Group id="1" type="step">
         {{
           header: config('Ask a question', question),
-          body: 'Answer Input Fields',
+          body: answers
         }}
       </Group>
     );
@@ -487,6 +487,9 @@ uis.question = {
     return (
       <UI.Question
         question={`Why are you removing ${config('Driver One', driver)} from your policy?`}
+        answers={(
+          <UI.Answer id="removal_reason" />
+        )}
       />
     );
   },
@@ -502,6 +505,9 @@ uis.question = {
     return (
       <UI.Question
         question={`What state is ${config('Driver One', driver)} licensed in?`}
+        answers={(
+          <UI.Answer id="state" />
+        )}
       />
     );
   },
@@ -555,6 +561,9 @@ uis.question = {
     return (
       <UI.Question
         question={`What is ${config('Driver One', driver)}'s relationship to ${config('Driver Two', driver2)}?`}
+        answers={(
+          <UI.Answer id="relationship" />
+        )}
       />
     );
   },
@@ -582,6 +591,86 @@ uis.question = {
     );
   },
 };
+
+uis.answer = {
+  /*
+   <UI.Answer
+      type="select"
+      options={[
+        { value: 'spouse', label: 'Spouse/Partner' },
+        { value: 'child', label: 'Child' },
+        { value: 'sibling', label: 'Sibling', selected:true },
+        { value: 'relative', label: 'Relative' },
+        { value: 'roommate', label: 'Roommate' },
+        { value: 'other', label: 'Other' },
+      ]}
+    />
+  */
+  select({ options, ...rest }) {
+    return (
+      <InputSelect
+        {...rest}
+      >
+        {{
+          options:options
+        }}
+      </InputSelect>
+    );
+  },
+  /*
+      <UI.Answer id="state" />
+
+      TODO: Allow passing props for selecting certain options, triggering actions
+  */
+  state({}){
+    return (
+      <UI.Answer
+        id="select"
+        options={[
+          { value: 'arizona', label: 'Arizona' },
+          { value: 'alaska', label: 'Alaska' },
+          { value: 'arkansas', label: 'Arkansas' },
+          { value: 'washington', label: 'Washington', selected:true },
+          { value: 'california', label: 'California' },
+          { value: 'oregon', label: 'Oregon' },
+        ]}
+      />
+    )
+  },
+  /*
+      <UI.Answer id="relationship" />
+  */
+  relationship({}) {
+    return (
+      <UI.Answer
+        id="select"
+        options={[
+          { value: 'spouse', label: 'Spouse/Partner' },
+          { value: 'child', label: 'Child' },
+          { value: 'sibling', label: 'Sibling', selected:true },
+          { value: 'relative', label: 'Relative' },
+          { value: 'roommate', label: 'Roommate' },
+          { value: 'other', label: 'Other' },
+        ]}
+      />
+    )
+  },
+  /*
+      <UI.Answer id="removal_reason" />
+  */
+  removal_reason({}) {
+    return (
+      <UI.Answer
+        id="select"
+        options={[
+          { value: 'because', label: 'Just Because' },
+          { value: 'moving', label: 'Moving' },
+          { value: 'sibling', label: 'Do not know', selected:true }
+        ]}
+      />
+    )
+  }
+}
 
 /*
     TEXT

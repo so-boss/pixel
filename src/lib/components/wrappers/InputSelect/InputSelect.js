@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import {Wrapper} from '../../';
 import Select from 'react-select';
+import './InputSelect.pcss';
 
 const customStyles = {
   control: (provided, state) => ({
@@ -86,9 +87,9 @@ export default class InputSelect extends Component {
 }
 
 InputSelect.displayName = 'InputSelect';
-InputSelect.propTypes = {
-  // name: PropTypes.string,
-};
+// InputSelect.propTypes = {
+//   // name: PropTypes.string,
+// };
 
 InputSelect.defaultProps = {
 
