@@ -474,7 +474,7 @@ const mixins = {
     var col_3 = px.block.col_3;
     rules['&:nth-child(3)'] =_.merge(
       mixins.flex(mixin, 'right'),
-      mixins.flex(mixin, 'top'),
+      mixins.flex(mixin, 'bottom'),
       mixins.empty(mixin),
       {
         '@mixin-content': {},

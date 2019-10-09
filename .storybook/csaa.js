@@ -1,7 +1,7 @@
 import {create} from '@storybook/theming';
 
 export default create({
-  base: 'light',
+  base: 'deepskyblue',
 
   // colorPrimary: 'hotpink',
   // colorSecondary: 'deepskyblue',
@@ -31,7 +31,7 @@ export default create({
   inputTextColor: 'black',
   inputBorderRadius: 4,
 
-  brandTitle: 'Digital PIXEL',
+  brandTitle: 'PIXEL by digital',
   brandUrl: 'https://csaa.design',
-  brandImage: 'https://lh3.googleusercontent.com/oecp4VCRmpYqauoMYkBa6YXR6Xc6CQ1yD40jYkdd_t7W7Ko6gzEg1mORMZfjgB8r7ic',
+  //brandImage: 'http://www.trovemods.com/wp-content/uploads/2017/01/Nathans-Simple-Crosshair.png',
 });
