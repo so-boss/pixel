@@ -1,5 +1,5 @@
 import React from "react";
-import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag, Inputs, InputSelect } from '../../../../../dist';//'../../../components';
+import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag, Inputs, InputSelect } from 'pixel';//'../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
 import { Formik, Form } from 'formik';
@@ -36,7 +36,7 @@ export default {
 };
 
 export const ageLicensed = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Action drawer="expanded">
         <UI.Drawer id="interview">
@@ -47,11 +47,11 @@ export const ageLicensed = () => (
         </UI.Drawer>
       </Action>
     </div>
-  </Wrapper>
+  </div>
 );
 
 export const gender = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Action drawer="expanded">
         <UI.Drawer id="interview">
@@ -62,11 +62,11 @@ export const gender = () => (
         </UI.Drawer>
       </Action>
     </div>
-  </Wrapper>
+  </div>
 );
 
 export const relationship = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Action drawer="expanded">
         <UI.Drawer id="interview">
@@ -78,11 +78,11 @@ export const relationship = () => (
         </UI.Drawer>
       </Action>
     </div>
-  </Wrapper>
+  </div>
 );
 
 export const maritalStatus = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Action drawer="expanded">
         <UI.Drawer id="interview">
@@ -93,11 +93,11 @@ export const maritalStatus = () => (
         </UI.Drawer>
       </Action>
     </div>
-  </Wrapper>
+  </div>
 );
 
 export const modifyingMore = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Action drawer="expanded">
         <UI.Drawer id="interview">
@@ -105,11 +105,11 @@ export const modifyingMore = () => (
         </UI.Drawer>
       </Action>
     </div>
-  </Wrapper>
+  </div>
 );
 
 export const removeDriverReason = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <ActionBlock
         lines={[
@@ -140,11 +140,11 @@ export const removeDriverReason = () => (
         </UI.Drawer>
       </UI.Action>
     </div>
-  </Wrapper>
+  </div>
 );
 
 export const removeVehicleReason = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <UI.Action
         id="vehicle_block"
@@ -160,11 +160,11 @@ export const removeVehicleReason = () => (
         </UI.Drawer>
       </UI.Action>
     </div>
-  </Wrapper>
+  </div>
 );
 
 export const stateLicensed = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <ActionBlock
         lines={[
@@ -181,11 +181,11 @@ export const stateLicensed = () => (
         </UI.Drawer>
       </ActionBlock>
     </div>
-  </Wrapper>
+  </div>
 );
 
 export const licenseNumber = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Action drawer="expanded">
         <UI.Drawer id="interview">
@@ -196,5 +196,5 @@ export const licenseNumber = () => (
         </UI.Drawer>
       </Action>
     </div>
-  </Wrapper>
+  </div>
 );

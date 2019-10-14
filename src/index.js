@@ -1,17 +1,46 @@
-//import React from 'react';
-import React, { Component } from 'react';
-// import {BrowserRouter, Redirect, Route, Switch} from 'react-router-dom';
-// import ReactDOM from "react-dom";
-//
-//
-//import ReactDOM from "react-dom";
-import {
-  // ELEMENTS
-  Block, Title, Button, Icon, Thing, Field,
-  // WRAPPERS
-  Wrapper, Action, ActionBlock, ActionButton, ActionLink, Flag, Tag, Input, InputSelect, Inputs, Label, Message, Interview,
-  //CONTAINERS
-  Container, Drawer, Group, Page, UI
+import React from 'react';
+import ReactDOM from 'react-dom'
+class App extends React.Component {
+  render() {
+    return (
+      <React.Fragment>
+        <h2>Hello!</h2>
+      </React.Fragment>
+    )
+  }
+}
+
+const rootElement = document.getElementById("app");
+ReactDOM.render(<App />, rootElement);
+
+export {
+//ELEMENTS
+  Block,
+  Title,
+  Button,
+  Icon,
+  Thing,
+  Field,
+//WRAPPERS
+  Wrapper,
+  Action,
+  ActionBlock,
+  ActionButton,
+  ActionLink,
+  Flag,
+  Tag,
+  Input,
+  InputSelect,
+  Inputs,
+  Label,
+  Message,
+  Interview,
+//CONTAINERS
+  Container,
+  Drawer,
+  Group,
+  Page,
+  UI
 } from './lib/components';
 
 import './index.pcss';
@@ -1006,11 +1035,11 @@ render(App);
 */
 
 
-export {
-  // ELEMENTS
-  Block, Title, Button, Icon, Thing, Field,
-  // WRAPPERS
-  Wrapper, Action, ActionBlock, ActionButton, ActionLink, Flag, Tag, Input, InputSelect, Inputs, Label, Message, Interview,
-  //CONTAINERS
-  Container, Drawer, Group, Page, UI
-};
+// export {
+//   // ELEMENTS
+//   Block, Title, Button, Icon, Thing, Field,
+//   // WRAPPERS
+//   Wrapper, Action, ActionBlock, ActionButton, ActionLink, Flag, Tag, Input, InputSelect, Inputs, Label, Message, Interview,
+//   //CONTAINERS
+//   Container, Drawer, Group, Page, UI
+// };

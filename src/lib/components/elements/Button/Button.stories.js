@@ -1,5 +1,5 @@
 import React from 'react';
-import { Block, Wrapper, Drawer, Interview, Group, UI, Flag, Tag, Action, ActionBlock } from '../../../../../dist'//'../../../components';
+import { Block, Wrapper, Drawer, Interview, Group, UI, Flag, Tag, Action, ActionBlock } from 'pixel'//'../../../components';
 
 export default {
   title: 'Elements|Button',
@@ -10,9 +10,9 @@ export default {
 };
 
 export const Color = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
 
     </div>
-  </Wrapper>
+  </div>
 )

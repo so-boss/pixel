@@ -1,32 +1,24 @@
 import React from 'react';
-import { Block, Wrapper, Drawer, Interview, Group, UI, Flag, Tag, Action, ActionBlock } from '../../../../../dist'//'../../../components';
+import {
+  Wrapper
+} from 'pixel';
 
 export default {
-  title: 'Wrappers|Wrapper/A/B',
-
-  // parameters: {
-  //   component: Drawer,
-  // },
+  title: 'Wrappers|Wrapper'
 };
 
 export const wrapping = () => (
-  <Wrapper type="story">
-    <div>
-
-    </div>
-  </Wrapper>
+  <div type="story">
+    <div></div>
+  </div>
 )
 export const aliasing = () => (
-  <Wrapper type="story">
-    <div>
-
-    </div>
-  </Wrapper>
+  <div type="story">
+    <div></div>
+  </div>
 )
 export const contextAndMeaning = () => (
-  <Wrapper type="story">
-    <div>
-
-    </div>
-  </Wrapper>
+  <div type="story">
+    <div></div>
+  </div>
 )

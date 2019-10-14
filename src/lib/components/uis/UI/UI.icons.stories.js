@@ -1,5 +1,5 @@
 import React from "react";
-import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag } from '../../../../../dist';//'../../../components';
+import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag } from 'pixel';//'../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
 export default {
@@ -10,7 +10,7 @@ export default {
   // },
 };
 export const auto = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <layout>
         <UI.Icon id="auto"/>
@@ -21,5 +21,5 @@ export const auto = () => (
         <UI.Icon id="auto_large"/>
       </layout>
     </div>
-  </Wrapper>
+  </div>
 );

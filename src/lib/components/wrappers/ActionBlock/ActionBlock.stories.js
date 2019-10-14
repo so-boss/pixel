@@ -1,5 +1,5 @@
 import React from 'react';
-import { Block, Wrapper, Drawer, Interview, UI, Flag, Tag, Action, ActionBlock } from '../../../../../dist';
+import { Block, Wrapper, Drawer, Interview, UI, Flag, Tag, Action, ActionBlock } from 'pixel';
 
 export default {
   title: 'Wrappers|Action/Block',
@@ -11,7 +11,7 @@ export default {
 
 export const ab1 = () => {
   return (
-    <Wrapper type="story">
+    <div type="story">
       <div>
         <ActionBlock
           id="addDriver"
@@ -38,7 +38,7 @@ export const ab1 = () => {
           ]}
         />
       </div>
-    </Wrapper>
+    </div>
   )
 };
 ab1.story = {
@@ -47,7 +47,7 @@ ab1.story = {
 
 export const ab2 = () => {
   return (
-    <Wrapper type="story">
+    <div type="story">
       <div>
         <ActionBlock
           id="addDriver"
@@ -59,7 +59,7 @@ export const ab2 = () => {
           indicator="arrow"
         />
       </div>
-    </Wrapper>
+    </div>
   )
 };
 ab2.story = {
@@ -68,7 +68,7 @@ ab2.story = {
 
 export const ab3 = () => {
   return (
-    <Wrapper type="story">
+    <div type="story">
       <div>
         <ActionBlock
           icon={{
@@ -84,7 +84,7 @@ export const ab3 = () => {
           indicator="cancel"
         />
       </div>
-    </Wrapper>
+    </div>
   )
 };
 ab3.story = {
@@ -93,7 +93,7 @@ ab3.story = {
 
 export const ab4 = () => {
   return (
-    <Wrapper type="story">
+    <div type="story">
       <div>
         <ActionBlock
           icon={{
@@ -129,7 +129,7 @@ export const ab4 = () => {
           indicator="arrow"
         />
       </div>
-    </Wrapper>
+    </div>
   )
 };
 

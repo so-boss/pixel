@@ -1,5 +1,5 @@
 import React from "react";
-import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag, Inputs, InputSelect } from '../../../../../dist';//'../../../components';
+import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag, Inputs, InputSelect } from 'pixel';//'../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
 import { Formik, Form } from 'formik';
@@ -36,7 +36,7 @@ export default {
 };
 
 export const firstName = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Inputs
         id="firstName"
@@ -48,10 +48,10 @@ export const firstName = () => (
         <UI.Field id="name_first" />
       </Inputs>
     </div>
-  </Wrapper>
+  </div>
 );
 export const middleName = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Inputs
         id="middleName"
@@ -63,10 +63,10 @@ export const middleName = () => (
         <UI.Field id="name_middle" />
       </Inputs>
     </div>
-  </Wrapper>
+  </div>
 );
 export const lastName = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Inputs
         id="lastName"
@@ -78,10 +78,10 @@ export const lastName = () => (
         <UI.Field id="name_last" />
       </Inputs>
     </div>
-  </Wrapper>
+  </div>
 );
 export const fullName = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Inputs
         id="fullName"
@@ -93,10 +93,10 @@ export const fullName = () => (
         <UI.Field id="name_full" />
       </Inputs>
     </div>
-  </Wrapper>
+  </div>
 );
 export const suffix = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Inputs
         id="suffix"
@@ -108,10 +108,10 @@ export const suffix = () => (
         <UI.Field id="name_suffix" />
       </Inputs>
     </div>
-  </Wrapper>
+  </div>
 );
 export const businessName = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Inputs
         id="institutionName"
@@ -132,10 +132,10 @@ export const businessName = () => (
         />
       </Inputs>
     </div>
-  </Wrapper>
+  </div>
 );
 export const email = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Inputs
         id="names"
@@ -147,5 +147,5 @@ export const email = () => (
         <UI.Field id="email" />
       </Inputs>
     </div>
-  </Wrapper>
+  </div>
 );

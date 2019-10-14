@@ -1,5 +1,5 @@
 import React from "react";
-import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag } from '../../../../../dist';//'../../../components';
+import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag } from 'pixel';//'../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
 export default {
@@ -10,7 +10,7 @@ export default {
   // },
 };
 export const driver = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <UI.Action
         id="driver_block"
@@ -18,10 +18,10 @@ export const driver = () => (
         description="Named Insured"
       />
     </div>
-  </Wrapper>
+  </div>
 );
 export const removingDriver = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <UI.Action
         id="block"
@@ -33,11 +33,11 @@ export const removingDriver = () => (
         ]}
       />
     </div>
-  </Wrapper>
+  </div>
 )
 
 export const vehicle = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <UI.Action
         id="vehicle_block"
@@ -45,5 +45,5 @@ export const vehicle = () => (
         vin="KDIOPW29812934"
       />
     </div>
-  </Wrapper>
+  </div>
 );

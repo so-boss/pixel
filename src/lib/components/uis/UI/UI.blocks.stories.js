@@ -1,5 +1,5 @@
 import React from "react";
-import { Block, UI, Wrapper, Flag, Tag } from '../../../../../dist';//'../../../components';
+import { Block, UI, Wrapper, Flag, Tag } from 'pixel';//'../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
 export default {
@@ -10,7 +10,7 @@ export default {
   // },
 };
 export const newVehicle = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <UI.Block
         id="twoLiner"
@@ -20,10 +20,10 @@ export const newVehicle = () => (
         ]}
       />
     </div>
-  </Wrapper>
+  </div>
 )
 export const autoPolicy = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <UI.Block
         id="threeLiner"
@@ -34,10 +34,10 @@ export const autoPolicy = () => (
         ]}
       />
     </div>
-  </Wrapper>
+  </div>
 )
 export const autoPolicyPayment = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <UI.Block
         id="fourLiner"
@@ -49,5 +49,5 @@ export const autoPolicyPayment = () => (
         ]}
       />
     </div>
-  </Wrapper>
+  </div>
 )

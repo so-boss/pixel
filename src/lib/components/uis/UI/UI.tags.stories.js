@@ -1,5 +1,5 @@
 import React from "react";
-import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag } from '../../../../../dist';//'../../../components';
+import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag } from 'pixel';//'../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
 export default {
@@ -10,17 +10,17 @@ export default {
   // },
 };
 export const variations = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <layout type="columns">
         <UI.Tag/>
       </layout>
     </div>
-  </Wrapper>
+  </div>
 );
 
 export const vehicle = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <layout type="columns">
         <UI.Tag
@@ -28,10 +28,10 @@ export const vehicle = () => (
         />
       </layout>
     </div>
-  </Wrapper>
+  </div>
 );
 export const vehicleDetailed = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <layout type="columns">
         <UI.Tag
@@ -40,5 +40,5 @@ export const vehicleDetailed = () => (
         />
       </layout>
     </div>
-  </Wrapper>
+  </div>
 );

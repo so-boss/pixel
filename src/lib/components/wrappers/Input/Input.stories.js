@@ -1,5 +1,5 @@
 import React from "react";
-import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag,Input, Inputs, InputSelect } from '../../../../../dist';//'../../../components';
+import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag,Input, Inputs, InputSelect } from 'pixel';//'../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
 import { Formik, Form } from 'formik';
@@ -39,7 +39,7 @@ export default {
 };
 
 export const Text = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Inputs
         id="names"
@@ -55,10 +55,10 @@ export const Text = () => (
         />
       </Inputs>
     </div>
-  </Wrapper>
+  </div>
 );
 export const masking = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Inputs
         id="names"
@@ -81,6 +81,6 @@ export const masking = () => (
         />
       </Inputs>
     </div>
-  </Wrapper>
+  </div>
 );
 

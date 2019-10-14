@@ -1,16 +1,18 @@
 import React from 'react';
-import { Block, Wrapper, Drawer, Interview, Group, UI, Flag, Tag, Action, ActionBlock } from '../../../../../dist'//'../../../components';
+import {
+  Wrapper,
+  Drawer,
+  Interview,
+  UI,
+  ActionBlock
+} from 'pixel';
 
 export default {
-  title: 'Containers|Drawer',
-
-  // parameters: {
-  //   component: Drawer,
-  // },
+  title: 'Containers|Drawer'
 };
 
 export const drawer1 = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <ActionBlock
         lines={[
@@ -46,7 +48,7 @@ export const drawer1 = () => (
         </Drawer>
       </ActionBlock>
     </div>
-  </Wrapper>
+  </div>
 )
 drawer1.story = {
   name: 'Horizontal Workflow'
@@ -54,7 +56,7 @@ drawer1.story = {
 
 export const drawer2 = () => {
   return (
-    <Wrapper type="story">
+    <div type="story">
       <div>
 
           <UI.Drawer id="interview">
@@ -66,7 +68,7 @@ export const drawer2 = () => {
           </UI.Drawer>
 
       </div>
-    </Wrapper>
+    </div>
   )
 };
 

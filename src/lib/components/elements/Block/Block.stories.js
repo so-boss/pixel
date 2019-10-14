@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Block, Wrapper, Flag, Tag } from '../../../../../dist';//'../../../components';
+import { Block, Wrapper, Flag, Tag } from 'pixel';//'../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
 export default {
@@ -20,7 +20,7 @@ export const oneLine = () => {
   const lineOneText = text(label, defaultValue, groupId);
 
   return (
-    <Wrapper type="story">
+    <div type="story">
       <div>
         <Block
           lines={[
@@ -32,7 +32,7 @@ export const oneLine = () => {
           ]}
         />
       </div>
-    </Wrapper>
+    </div>
   )
 };
 
@@ -42,7 +42,7 @@ oneLine.story = {
 };
 
 export const twoLines = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Block
         lines={[
@@ -56,14 +56,14 @@ export const twoLines = () => (
         ]}
       />
     </div>
-  </Wrapper>
+  </div>
 );
 twoLines.story = {
   name: 'Two Lines',
 };
 
 export const fourLinesOrLess = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Block
         lines={[
@@ -93,14 +93,14 @@ export const fourLinesOrLess = () => (
         ]}
       />
     </div>
-  </Wrapper>
+  </div>
 );
 fourLinesOrLess.story = {
   name: 'Four Lines (or less)',
 };
 
 export const icons = () => (
-  <Wrapper type="story">
+  <div type="story">
 
     <div>
       <Block
@@ -131,14 +131,14 @@ export const icons = () => (
         ]}
       />
     </div>
-  </Wrapper>
+  </div>
 );
 icons.story = {
   name: 'Icons',
 };
 
 export const inlineFlagTag = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Block
         icon={{
@@ -202,13 +202,13 @@ export const inlineFlagTag = () => (
         ]}
       />
     </div>
-  </Wrapper>
+  </div>
 );
 inlineFlagTag.story = {
   name: 'Flag/Tag: Inline',
 };
 export const flagsRT = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Block
         lines={[
@@ -235,14 +235,14 @@ export const flagsRT = () => (
         }}
       />
     </div>
-  </Wrapper>
+  </div>
 );
 flagsRT.story = {
   name: 'Flag/Tag: Right Align',
 };
 
 export const permutations = () => (
-    <Wrapper type="story">
+    <div type="story">
       <div>
         <Block
           lines={[
@@ -460,5 +460,5 @@ export const permutations = () => (
           }}
         />
       </div>
-    </Wrapper>
+    </div>
 )

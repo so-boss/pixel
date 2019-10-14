@@ -1,1 +1,27 @@
-{ "extends": "react-app" }
+{
+  "extends": "eslint:recommended",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "globalReturn": true
+    }
+  },
+  "rules": {
+    "no-console": "off",
+    "strict": ["error", "global"],
+    "curly": "warn",
+    "no-return-await": "error"
+  },
+  "globals": {
+    "parcelRequire": "writable",
+    "pixel": "writable",
+    "define": "writable"
+  },
+}

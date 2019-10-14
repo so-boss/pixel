@@ -1,5 +1,5 @@
 import React from 'react';
-import { Block, Wrapper, Drawer, Interview, Group, UI, Flag, Tag, Action, ActionBlock } from '../../../../../dist'//'../../../components';
+import { Block, Wrapper, Drawer, Interview, Group, UI, Flag, Tag, Action, ActionBlock } from 'pixel'//'../../../components';
 
 export default {
   title: 'Elements|Title',
@@ -10,16 +10,16 @@ export default {
 };
 
 export const labeling = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
 
     </div>
-  </Wrapper>
+  </div>
 )
 export const messaging = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
 
     </div>
-  </Wrapper>
+  </div>
 )

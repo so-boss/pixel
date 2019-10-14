@@ -1,5 +1,5 @@
 import React from 'react';
-import { Block, Wrapper, Drawer, Interview, UI, Flag, Tag, Action, ActionButton } from '../../../../../dist';
+import { Block, Wrapper, Drawer, Interview, UI, Flag, Tag, Action, ActionButton } from 'pixel';
 
 export default {
   title: 'Wrappers|Action/Button',
@@ -11,7 +11,7 @@ export default {
 
 export const ac1 = () => {
   return (
-    <Wrapper type="story">
+    <div type="story">
       <div>
         <layout type="sidebyside">
           <ActionButton>No</ActionButton>
@@ -20,7 +20,7 @@ export const ac1 = () => {
           <ActionButton>Remove Vehicle</ActionButton>
         </layout>
       </div>
-    </Wrapper>
+    </div>
   )
 };
 ac1.story = {
@@ -29,7 +29,7 @@ ac1.story = {
 
 export const ac2 = () => {
   return (
-    <Wrapper type="story">
+    <div type="story">
       <div>
         <layout type="sidebyside">
           <ActionButton theme="secondary">No</ActionButton>
@@ -38,7 +38,7 @@ export const ac2 = () => {
           <ActionButton theme="secondary">Remove Vehicle</ActionButton>
         </layout>
       </div>
-    </Wrapper>
+    </div>
   )
 };
 
@@ -48,7 +48,7 @@ ac2.story = {
 
 export const ac3 = () => {
   return (
-    <Wrapper type="story">
+    <div type="story">
       <div>
         <layout type="sidebyside">
           <ActionButton disable="true">No</ActionButton>
@@ -57,7 +57,7 @@ export const ac3 = () => {
           <ActionButton disable="true">Remove Vehicle</ActionButton>
         </layout>
       </div>
-    </Wrapper>
+    </div>
   )
 };
 

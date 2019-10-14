@@ -1,5 +1,5 @@
 import React from "react";
-import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag } from '../../../../../dist';//'../../../components';
+import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag } from 'pixel';//'../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
 export default {
@@ -10,17 +10,17 @@ export default {
   // },
 };
 export const variations = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <layout type="columns">
         <UI.Action id="link"/>
       </layout>
     </div>
-  </Wrapper>
+  </div>
 );
 
 export const cancel = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <layout type="columns">
         <UI.Action
@@ -29,11 +29,11 @@ export const cancel = () => (
         />
       </layout>
     </div>
-  </Wrapper>
+  </div>
 );
 
 export const submit = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <layout type="columns">
         <UI.Action
@@ -42,11 +42,11 @@ export const submit = () => (
         />
       </layout>
     </div>
-  </Wrapper>
+  </div>
 );
 
 export const save = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <layout type="columns">
         <UI.Action
@@ -55,32 +55,32 @@ export const save = () => (
         />
       </layout>
     </div>
-  </Wrapper>
+  </div>
 );
 export const back = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <layout type="columns">
         <UI.Action id="back_link"/>
       </layout>
     </div>
-  </Wrapper>
+  </div>
 );
 export const next = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <layout type="columns">
         <UI.Action id="next_link"/>
       </layout>
     </div>
-  </Wrapper>
+  </div>
 );
 export const navigation = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <layout type="columns">
         <UI.Action id="interview_nav"/>
       </layout>
     </div>
-  </Wrapper>
+  </div>
 );

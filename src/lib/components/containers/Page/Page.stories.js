@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page, Block, Wrapper, Drawer, Interview, Group, UI, Flag, Tag, Action, ActionBlock } from '../../../../../dist'//'../../../components';
+import { Page, Block, Wrapper, Drawer, Interview, Group, UI, Flag, Tag, Action, ActionBlock } from 'pixel'//'../../../components';
 
 export default {
   title: 'Containers|Page',
@@ -10,7 +10,7 @@ export default {
 };
 
 export const title = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Page>
         {{
@@ -25,12 +25,12 @@ export const title = () => (
         }}
       </Page>
     </div>
-  </Wrapper>
+  </div>
 )
 
 export const titleAndDescription = () => {
   return (
-    <Wrapper type="story">
+    <div type="story">
       <div>
         <Page>
           {{
@@ -46,13 +46,13 @@ export const titleAndDescription = () => {
           }}
         </Page>
       </div>
-    </Wrapper>
+    </div>
   )
 };
 
 export const autoPolicy = () => {
   return (
-    <Wrapper type="story">
+    <div type="story">
       <div>
         <Page>
           {{
@@ -70,6 +70,6 @@ export const autoPolicy = () => {
           }}
         </Page>
       </div>
-    </Wrapper>
+    </div>
   )
 };

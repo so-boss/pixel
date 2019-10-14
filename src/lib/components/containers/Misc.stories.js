@@ -10,30 +10,30 @@ export default {
 };
 
 export const App = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
 
     </div>
-  </Wrapper>
+  </div>
 )
 export const Card = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
 
     </div>
-  </Wrapper>
+  </div>
 )
 export const Form = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
 
     </div>
-  </Wrapper>
+  </div>
 )
 export const Panel = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
 
     </div>
-  </Wrapper>
+  </div>
 )

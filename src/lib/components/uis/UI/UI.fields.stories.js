@@ -1,5 +1,15 @@
 import React from "react";
-import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag, Inputs, InputSelect } from '../../../../../dist';//'../../../components';
+import {
+  ActionBlock,
+  Action,
+  Block,
+  UI,
+  Wrapper,
+  Flag,
+  Tag,
+  Inputs,
+  InputSelect
+} from 'pixel';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
 import { Formik, Form } from 'formik';
@@ -36,7 +46,7 @@ export default {
 };
 
 export const personsName = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Inputs
         id="names"
@@ -51,10 +61,10 @@ export const personsName = () => (
         <UI.Fields id="name_person"/>
       </Inputs>
     </div>
-  </Wrapper>
+  </div>
 );
 export const address = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Inputs
         id="address"
@@ -68,10 +78,10 @@ export const address = () => (
         <UI.Fields id="address" />
       </Inputs>
     </div>
-  </Wrapper>
+  </div>
 );
 export const lessor = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Inputs
         id="names"
@@ -86,10 +96,10 @@ export const lessor = () => (
         <UI.Fields id="lessor" />
       </Inputs>
     </div>
-  </Wrapper>
+  </div>
 );
 export const financier = () => (
-  <Wrapper type="story">
+  <div type="story">
     <div>
       <Inputs
         id="names"
@@ -104,5 +114,5 @@ export const financier = () => (
         <UI.Fields id="financier" />
       </Inputs>
     </div>
-  </Wrapper>
+  </div>
 );
