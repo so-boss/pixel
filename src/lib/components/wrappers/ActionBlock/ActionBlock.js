@@ -25,13 +25,69 @@ function PreconfiguredAction ({
 }
 
 export default class ActionBlock extends Component {
+  // vvvvvv
+  constructor (props) {
+    super(props);
+    this.handleActionBlockClick = this.handleActionBlockClick.bind(this);
+    this.getDrawer = this.getDrawer.bind(this);
+
+    this.store = {
+      $drawer:null,
+    };
+
+    this.state = {
+      drawer: {
+        enabled:false,
+        expanded:false,
+      },
+    };
+  }
+
+  componentDidMount () {
+    const {
+      drawer,
+      children,
+    } = this.props;
+
+    // If Drawer Exists becasue it's passed as a child
+    if (children && children.type.displayName === 'Drawer') {
+      this.setState({
+        drawer:{
+          enabled:true,
+          expanded:true,
+        },
+      });
+    }
+  }
+
+  getDrawer (o) {
+    this.store.$drawer = o.$container;
+  }
+
+  handleActionBlockClick (e) {
+    this.setState(prevState => ({
+      drawer: {
+        enabled:true,
+        expanded:!prevState.drawer.expanded,
+      },
+    }));
+  }
+
+  // ^^^^^^^
   renderChildren () {
     const {
       children,
     } = this.props;
 
-    return React.Children.map(children, child => React.cloneElement(child, {
+    const {
+      drawer,
+    } = this.state;
 
+    return React.Children.map(children, child => React.cloneElement(child, {
+      drawer,
+      onActionBlockClick:this.handleActionBlockClick,
+      getContainer:this.getDrawer,
+      store:this.store,
     }));
   }
 
@@ -42,6 +98,10 @@ export default class ActionBlock extends Component {
       indicator,
       drawer,
     } = this.props;
+
+    // const {
+    //   drawer,
+    // } = this.state;
 
     const indicatorObj = {
       type: false,
@@ -76,9 +136,9 @@ export default class ActionBlock extends Component {
       return (
         <wrapper>
           <PreconfiguredAction
-            // onActionBlockClick={this.handleActionBlockClick}
+            onActionBlockClick={this.handleActionBlockClick}
             id={id}
-            // drawer={drawer}
+            drawer={drawer}
             indicatorProps={indicatorObj}
             {...this.props}
           >
@@ -104,7 +164,7 @@ ActionBlock.displayName = 'ActionBlock';
 ActionBlock.propTypes = {
   id: PropTypes.string,
   children: PropTypes.any,
-  indicator: PropTypes.string,
+  indicator: PropTypes.any,
 };
 
 ActionBlock.defaultProps = {

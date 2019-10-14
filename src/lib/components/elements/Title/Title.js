@@ -75,6 +75,5 @@ Title.defaultProps = {
 // };
 Title.propTypes = {
   id: PropTypes.string,
-  type: PropTypes.string,
-  pixel: PropTypes.string
+  type: PropTypes.string
 };

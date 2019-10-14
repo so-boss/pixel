@@ -9,7 +9,7 @@ export default {
   // },
 };
 
-export const container = () => (
+export const container1 = () => (
   <Wrapper type="story">
     <div>
 
