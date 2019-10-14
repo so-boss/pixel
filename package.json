@@ -17,7 +17,6 @@
     "@storybook/addon-a11y": "^5.2.3",
     "@storybook/addon-actions": "^5.2.3",
     "@storybook/addon-design-assets": "^5.2.3",
-    "@storybook/addon-docs": "^5.3.0-alpha.15",
     "@storybook/addon-info": "^5.2.3",
     "@storybook/addon-knobs": "^5.2.3",
     "@storybook/addon-links": "^5.2.3",
