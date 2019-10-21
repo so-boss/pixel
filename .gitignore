@@ -29,3 +29,4 @@ dist
 /yarn.lock
 .presets.js.icloud
 /stories/.index.stories.js.icloud
+*.icloud
