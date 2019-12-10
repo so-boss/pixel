@@ -4,6 +4,7 @@ import {
 } from 'pixel';
 
 export default {
+  component:Wrapper,
   title: 'Wrappers|Wrapper'
 };
 

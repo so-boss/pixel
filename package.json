@@ -3,13 +3,13 @@
   "version": "0.1.8",
   "description": "Pixel Design System's Web components for build stellar UI",
   "private": true,
-  "main": "dist/index.js",
+  "main": "dist/module.js",
   "scripts": {
     "clean": "rm -rf ./dist",
     "parcel-dev": "parcel src/index.html",
-    "parcel-build": "parcel build ./src/index.js --global pixel",
+    "parcel-build": "parcel build ./src/module.js --global pixel",
     "sourcemap": "source-map-explorer --html ./dist/index.js ./dist/index.js.map > source-map.html",
-    "storybook": "start-storybook -p 6006 -s ./assets",
+    "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
@@ -24,7 +24,8 @@
     "@storybook/addon-notes": "5.2.4",
     "@storybook/addon-viewport": "5.2.4",
     "@storybook/addons": "5.2.4",
-    "@storybook/react": "5.2.4",
+    "@storybook/react": "^5.2.8",
+    "@storybook/addon-docs": "^5.2.8",
     "autoprefixer": "^9.6.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
