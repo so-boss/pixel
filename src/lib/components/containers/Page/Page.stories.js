@@ -1,8 +1,8 @@
 import React from 'react';
-import { Page, Block, Wrapper, Drawer, Interview, Group, UI, Flag, Tag, Action, ActionBlock } from 'pixel'//'../../../components';
+import { Page, Block } from 'pixel';//'../../../components';
 
 export default {
-  title: 'Containers|Page',
+  title: 'Containers|Page'
 
   // parameters: {
   //   component: Drawer,

@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Block, Wrapper, Flag, Tag } from 'pixel';//'../../../components';
+import { Block } from 'pixel';//'../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
 export default {
-  title: 'Elements|Block',
+  title: 'Elements|Block'
   //addDecorator:withKnobs,
   // parameters: {
   //   component: Block,

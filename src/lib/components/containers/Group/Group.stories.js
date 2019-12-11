@@ -1,8 +1,8 @@
 import React from 'react';
-import { Block, Wrapper, Drawer, Interview, Group, UI, Flag, Tag, Action, ActionBlock } from 'pixel'//'../../../components';
+import { Wrapper } from 'pixel'//'../../../components';
 
 export default {
-  title: 'Containers|Group',
+  title: 'Containers|Group'
 
   // parameters: {
   //   component: Drawer,
@@ -12,7 +12,7 @@ export default {
 export const stepByStep = () => (
   <div type="story">
     <div>
-
+      <Wrapper></Wrapper>
     </div>
   </div>
 )

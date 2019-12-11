@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Wrapper,
   Drawer,
   Interview,
   UI,

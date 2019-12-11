@@ -1,8 +1,8 @@
 import React from 'react';
-import { Block, Wrapper, Drawer, Interview, Group, UI, Flag, Tag, Action, ActionBlock } from '../../../../dist'//'../../../components';
+//import { Block, Wrapper, Drawer, Interview, Group, UI, Flag, Tag, Action, ActionBlock } from 'pixel';//'../../../components';
 
 export default {
-  title: 'Containers|Other',
+  title: 'Containers|Other'
 
   // parameters: {
   //   component: Drawer,
@@ -11,29 +11,21 @@ export default {
 
 export const App = () => (
   <div type="story">
-    <div>
-
-    </div>
+    <div></div>
   </div>
 )
 export const Card = () => (
   <div type="story">
-    <div>
-
-    </div>
+    <div></div>
   </div>
 )
 export const Form = () => (
   <div type="story">
-    <div>
-
-    </div>
+    <div></div>
   </div>
 )
 export const Panel = () => (
   <div type="story">
-    <div>
-
-    </div>
+    <div></div>
   </div>
 )
