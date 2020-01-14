@@ -10,6 +10,6 @@ export default {
 
 export const container1 = () => (
   <div type="story">
-    <div><Wrapper></Wrapper></div>
+    <div></div>
   </div>
 )

@@ -3,7 +3,12 @@ import {
   Drawer,
   Interview,
   UI,
-  ActionBlock
+  ActionBlock,
+  Action,
+  Wrapper,
+  Group,
+  Title,
+  ActionLink
 } from 'pixel';
 
 export default {
@@ -15,33 +20,37 @@ export const drawer1 = () => (
     <div>
       <ActionBlock
         lines={[
-          'New Vehicle',
-          'Replacing 2006 Honda Accord',
+          'Add Driver',
+          'Get coverage for another driver in your household',
         ]}
       >
         <Drawer>
           {{
             body: (
-              <Interview id="removeDriver">
-                {{
-                  header: 'Why are you removing Emily from your policy?',
-                  body: 'select reason',
-                }}
-                {{
-                  header: 'Why are you removing Emily from your policy?',
-                  body: 'select reason',
-                }}
-                {{
-                  header: 'Why are you removing Emily from your policy?',
-                  body: 'select reason',
-                }}
-              </Interview>
+              <Wrapper>
+                <Group id="1" type="step">
+                  {{
+                    header: (
+                      <Title>Pleasae enter the following information:</Title>
+                    ),
+                    body: (
+                      <form>
+                        <input placeholder="First Name"/>
+                        <input placeholder="Middle"/>
+                        <input placeholder="Last Name"/>
+                        <input placeholder="Suffix"/>
+                        <input placeholder="Date of Birth"/>
+                      </form>
+                    ),
+                  }}
+                </Group>
+              </Wrapper>
             ),
             footer: (
-              <UI
-                element="action"
-                id="interview_nav"
-              />
+              <React.Fragment>
+                <ActionLink>Back</ActionLink>
+                <ActionLink>Next</ActionLink>
+              </React.Fragment>
             ),
           }}
         </Drawer>
@@ -52,6 +61,7 @@ export const drawer1 = () => (
 drawer1.story = {
   name: 'Horizontal Workflow'
 };
+
 
 export const drawer2 = () => {
   return (
