@@ -53,8 +53,8 @@ module.exports = {
     require('postcss-utilities')({
       centerMethod: 'flexbox'
     }),
-    // require('autoprefixer'),
-    // require('cssnano'),
+    require('autoprefixer'),
+    //require('cssnano'),
     require('postcss-reporter')({ clearReportedMessages: false })
   ]
 }

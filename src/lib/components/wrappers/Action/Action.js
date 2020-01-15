@@ -20,6 +20,7 @@ export default class Action extends Component {
       indicatorProps,
       theme,
       drawer,
+      expanded,
     } = this.props;
 
     // TODO: Accomplish the ternary opt on drawer prop
@@ -29,7 +30,8 @@ export default class Action extends Component {
     return (
       <action
         id={id}
-        drawer={drawer}// {drawerObj.enabled === true && (drawerObj.expanded === false ? 'collapsed' : 'expanded')}
+        drawer={drawer && (expanded === false ? 'collapsed' : 'expanded')}
+        // expanded={expanded ? 'true' : 'false'}
         indicator={indicatorProps && indicatorProps.type}
         type={type}
         theme={theme}
@@ -48,6 +50,7 @@ Action.propTypes = {
   children: PropTypes.any,
   indicatorProps: PropTypes.any,
   drawer: PropTypes.string,
+  expanded: PropTypes.any,
 };
 
 Action.defaultProps = {

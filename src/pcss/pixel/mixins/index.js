@@ -789,25 +789,6 @@ const mixins = {
     return rules;
   },
   /*
-      @mixin flag {...};
- */
-  flag(mixin) {
-    let rules = {};
-
-    return mixins.flagtag(mixin, rules, 'flag');
-  },
-  /*
-      TODO: REFACTOR all of this flagtag crap ASAP
-      @mixin tag {...}
-   */
-  tag(mixin) {
-    let rules = {};
-    rules = mixins.flagtag(mixin, rules, 'tag');
-
-    rules.tag['& > block']['& > wrapper'].display = 'flex';
-    return rules;
-  },
-  /*
         mixins.flagtag(mixin, 'flag');
         @mixin flagtag flag;
 
@@ -839,6 +820,28 @@ const mixins = {
       },
     );
 
+    return rules;
+  },
+  /*
+    @mixin flag {...};
+*/
+  flag(mixin) {
+    let rules = {};
+
+    rules = mixins.flagtag(mixin, rules, 'flag');
+    rules.flag['& > block']['& > wrapper'].display = 'block';
+
+    return rules;
+  },
+  /*
+      TODO: REFACTOR all of this flagtag crap ASAP
+      @mixin tag {...}
+   */
+  tag(mixin) {
+    let rules = {};
+    rules = mixins.flagtag(mixin, rules, 'tag');
+
+    rules.tag['& > block']['& > wrapper'].display = 'flex';
     return rules;
   },
   /*

@@ -42,8 +42,9 @@ export default class Container extends React.Component {
       tag,
       slots,
       // drawer,
-      getContainer
-      // ...rest
+      getContainer,
+      expanded,
+      ...rest
     } = this.props;
 
     if (!children) {
@@ -78,6 +79,7 @@ export default class Container extends React.Component {
         <ContainerElement
           getContainer={getContainer && this.getContainer}
           ref={this.containerEl}
+          {...rest}
         >
           <Wrapper>
             {header

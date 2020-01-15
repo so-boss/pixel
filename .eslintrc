@@ -13,11 +13,17 @@
       "globalReturn": true
     }
   },
+  "plugins": [
+    // ...
+    "react-hooks"
+  ],
   "rules": {
     "no-console": "off",
     "strict": ["error", "global"],
     "curly": "warn",
-    "no-return-await": "error"
+    "no-return-await": "error",
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "warn" // Checks effect dependencies
   },
   "globals": {
     "parcelRequire": "writable",

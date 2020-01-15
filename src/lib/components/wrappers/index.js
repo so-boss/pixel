@@ -3,6 +3,7 @@
     https://csaaig.atlassian.net/wiki/spaces/pixel/pages/904134741/Wrappers
 */
 export { default as Wrapper } from './Wrapper';
+export { default as WrapperContext } from './WrapperContext';
 export { default as Action } from './Action';
 export { default as ActionBlock } from './ActionBlock';
 export { default as ActionButton } from './ActionButton';

@@ -22,8 +22,6 @@ import {
 } from '../';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 
-
-
 const _ = require('lodash');
 const __ = require('../../utils/uis.js');
 

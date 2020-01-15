@@ -167,4 +167,6 @@ px.tag = _.merge(
   {},
 );
 
+console.log(px)
+
 module.exports = px;

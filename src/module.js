@@ -17,7 +17,7 @@ export {
   Block, Title, Button, Icon, Thing, Field,
 
   // WRAPPERS
-  Wrapper, Action, ActionBlock, ActionButton, ActionLink, Flag, Tag, Input, InputSelect, Inputs, Label, Message, Interview,
+  Wrapper, WrapperContext, Action, ActionBlock, ActionButton, ActionLink, Flag, Tag, Input, InputSelect, Inputs, Label, Message, Interview,
 
   //CONTAINERS
   Container, Drawer, Group, Page, UI

@@ -39,16 +39,15 @@ module.exports = {
       },
       autoprefixer: { grid: true }
     }),
-    require("postcss-mixins")({
-      mixins: cssMixins
-    }),
     require('postcss-nested'),
     require('postcss-map')({
       //basePath: path.join(__dirname, 'lib/shared-styles/maps'),
       //maps: [ 'color.js', 'font.js', 'px.js' ]
       maps:[maps.color, maps.font, maps.px]
     }),
-
+    require("postcss-mixins")({
+      mixins: cssMixins
+    }),
     require("postcss-flexbugs-fixes"),
     require('postcss-utilities')({
       centerMethod: 'flexbox'

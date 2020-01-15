@@ -1,5 +1,5 @@
 import React from "react";
-import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag } from 'pixel';//'../../../components';
+import { UI } from 'pixel';//'../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
 export default {

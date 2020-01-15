@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './ActionBlock.pcss';
 
-import { Action, Block, Drawer } from '../../';
+import { Action, Block, Drawer, WrapperContext } from '../../';
 
 function PreconfiguredAction ({
-  id, drawer, indicatorProps, children, ...props
+  id, drawer, state, indicatorProps, children, ...props
 }) {
   return (
     <Action
@@ -13,6 +13,7 @@ function PreconfiguredAction ({
       // type={drawer}
       indicatorProps={indicatorProps}
       drawer={drawer}
+      expanded={state.drawer.expanded}
       {...props}
     >
       <Block
@@ -134,28 +135,33 @@ export default class ActionBlock extends Component {
       indicatorObj.orientation = 'down';
 
       return (
-        <wrapper>
-          <PreconfiguredAction
-            onActionBlockClick={this.handleActionBlockClick}
-            id={id}
-            drawer={drawer}
-            indicatorProps={indicatorObj}
-            {...this.props}
-          >
-            {children}
-          </PreconfiguredAction>
-        </wrapper>
+        <WrapperContext.Provider value={this.state}>
+          <wrapper>
+            <PreconfiguredAction
+              onActionBlockClick={this.handleActionBlockClick}
+              id={id}
+              drawer={drawer}
+              indicatorProps={indicatorObj}
+              state={this.state}
+              {...this.props}
+            >
+              {children}
+            </PreconfiguredAction>
+          </wrapper>
+        </WrapperContext.Provider>
       );
     }
 
     return (
-      <PreconfiguredAction
-        id={id}
-        indicatorProps={indicatorObj}
-        {...this.props}
-      >
-        {children}
-      </PreconfiguredAction>
+      <WrapperContext.Provider value={this.state}>
+        <PreconfiguredAction
+          id={id}
+          indicatorProps={indicatorObj}
+          {...this.props}
+        >
+          {children}
+        </PreconfiguredAction>
+      </WrapperContext.Provider>
     );
   }
 }

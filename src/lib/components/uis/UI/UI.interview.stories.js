@@ -5,6 +5,7 @@ import {withKnobs, text} from "@storybook/addon-knobs";
 import { Formik, Form } from 'formik';
 
 import * as Yup from 'yup';
+import { motion } from 'framer-motion'
 
 const validationSchema = Yup.object()
   .shape({
