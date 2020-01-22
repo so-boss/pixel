@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import './UI.pcss';
 import * as inventory from '../../uis/inventory.js';
@@ -15,20 +15,11 @@ const definedUI = function (id, element, props) {
     packageID = 'def';
   }
 
-  console.log(uis, element, packageID)
   return (uis[element][packageID].apply(this, [props]));
 };
 
-export default class UI extends Component {
-  render () {
-    const {
-      element,
-      id,
-      ...rest
-    } = this.props;
-
-    return definedUI(id, element, this.props);
-  }
+export default function UI({element, id, ...rest}) {
+  return definedUI(id, element, this.props);
 }
 
 _.forIn(uis, (obj, element) => {
@@ -43,10 +34,6 @@ _.forIn(uis, (obj, element) => {
 });
 
 UI.displayName = 'UI';
-
-UI.defaultProps = {
-
-};
 
 UI.propTypes = {
   element: PropTypes.string,

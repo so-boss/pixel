@@ -4,7 +4,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 import './Field.pcss';
 
-function Field ({ type, value, label }) {
+export default function Field ({ type, value, label }) {
   return (
     <Wrapper pixel="field">
       <Label>{value}</Label>
@@ -18,5 +18,3 @@ Field.propTypes = {
   value:PropTypes.string,
   label:PropTypes.string
 };
-
-export default Field;

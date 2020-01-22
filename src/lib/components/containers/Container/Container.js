@@ -1,6 +1,6 @@
 import { Wrapper, Title } from './../../index.js';
 
-import React from 'react';
+import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 import './Container.pcss';
 
@@ -11,7 +11,8 @@ const isNamedSlots = function (children) {
   return isObject(children) && 'body' in children;
 };
 
-export default class Container extends React.Component {
+export default function Container({ children, tag, slots, getContainer, expanded, ...rest}){
+  /*
   constructor (props) {
     super(props);
     this.containerEl = React.createRef();
@@ -36,73 +37,75 @@ export default class Container extends React.Component {
     }
   }
 
-  render () {
-    const {
-      children,
-      tag,
-      slots,
-      // drawer,
-      getContainer,
-      expanded,
-      ...rest
-    } = this.props;
+   */
 
-    if (!children) {
-      throw new Error('children are missing !');
-    }
+  //const containerRef = useRef();
 
-    if (isNamedSlots(children)) {
-      const {
-        header,
-        body,
-      } = children;
+  // function getCont ($container) {
+  //   //const $container = containerRef//.current;
+  //
+  //   if (getContainer) {
+  //     getContainer({
+  //       $container,
+  //     });
+  //   }
+  // }
 
-      let {
-        footer,
-      } = children;
-
-      // IF no footer child is described
-      if (!footer) {
-        if (slots.footer.include !== false) {
-          footer = <Wrapper type="footer" />;
-        } else {
-          footer = null;
-        }
-      } else {
-        // OTHERWISE a footer is descibed and should be rendered
-        footer = <Wrapper type="footer">{footer}</Wrapper>;
-      }
-
-      const ContainerElement = `${tag}`;
-
-      return (
-        <ContainerElement
-          getContainer={getContainer && this.getContainer}
-          ref={this.containerEl}
-          {...rest}
-        >
-          <Wrapper>
-            {header
-              ? (
-                <Wrapper type="header">
-                  {
-                    React.isValidElement(header)
-                      ? header
-                      : <Title>{header}</Title>
-                  }
-                </Wrapper>
-              )
-              : null
-            }
-            <Wrapper type="body">{body}</Wrapper>
-            {footer}
-          </Wrapper>
-        </ContainerElement>
-      );
-    }
-
-    return null;
+  if (!children) {
+    throw new Error('children are missing !');
   }
+
+  if (isNamedSlots(children)) {
+    const {
+      header,
+      body,
+    } = children;
+
+    let {
+      footer,
+    } = children;
+
+    // IF no footer child is described
+    if (!footer) {
+      if (slots.footer.include !== false) {
+        footer = <Wrapper type="footer" />;
+      } else {
+        footer = null;
+      }
+    } else {
+      // OTHERWISE a footer is descibed and should be rendered
+      footer = <Wrapper type="footer">{footer}</Wrapper>;
+    }
+
+    const ContainerElement = `${tag}`;
+
+    return (
+      <ContainerElement
+        //getContainer={getCont(containerRef)} // && this.getContainer
+        //ref={containerRef}
+        {...rest}
+      >
+        <Wrapper>
+          {header
+            ? (
+              <Wrapper type="header">
+                {
+                  React.isValidElement(header)
+                    ? header
+                    : <Title>{header}</Title>
+                }
+              </Wrapper>
+            )
+            : null
+          }
+          <Wrapper type="body">{body}</Wrapper>
+          {footer}
+        </Wrapper>
+      </ContainerElement>
+    );
+  }
+
+  return null;
 }
 
 Container.defaultProps = {
@@ -119,10 +122,10 @@ Container.defaultProps = {
   },
 };
 
-Container.propTypes = {
-  children: PropTypes.object,
-  tag: PropTypes.string,
-  slots: PropTypes.object,
-  // drawer: PropTypes.any,
-  getContainer: PropTypes.element
-};
+// Container.propTypes = {
+//   children: PropTypes.object,
+//   tag: PropTypes.string,
+//   slots: PropTypes.object,
+//   // drawer: PropTypes.any,
+//   getContainer: PropTypes.element
+// };

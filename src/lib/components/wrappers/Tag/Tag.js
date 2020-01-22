@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { } from 'react';
 import PropTypes from 'prop-types';
 import './Tag.pcss';
 
@@ -11,15 +11,7 @@ import { Block } from '../../';
       2017 Toyota Camry SE
     </Tag>
  */
-export default class Tag extends Component {
-  render () {
-    const {
-      children,
-      theme,
-      icon,
-      ...rest
-    } = this.props;
-
+export default function Tag({children, theme, icon, ...rest}) {
     /*
         NOTE: Only {theme} defined in css is grey
         (only paramaterized for extra flexability)
@@ -41,7 +33,6 @@ export default class Tag extends Component {
         />
       </tag>
     );
-  }
 }
 
 Tag.defaultProps = {

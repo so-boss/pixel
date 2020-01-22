@@ -1,12 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import './Interview.pcss';
 
 import { Wrapper, Group } from '../../';
 
-const Step = ({
-  index, groupType, children, step,
-}) => (
+const Step = ({ index, groupType, children, step, }) => (
   <Group
     step={index}
     active={step === index ? 'true' : 'false'}
@@ -16,7 +14,9 @@ const Step = ({
   </Group>
 );
 
-export default class Interview extends Component {
+export default function Interview({children, type, groupType, steps, ...rest}){
+  const [interviewStep, setInterviewStep] = useState(0);
+  /*
   constructor (props) {
     super(props);
     this.next = this.next.bind(this);
@@ -52,14 +52,22 @@ export default class Interview extends Component {
     }));
   }
 
-  render () {
-    const {
-      children,
-      type,
-      groupType,
-      steps,
-      ...rest
-    } = this.props;
+   */
+
+    function handleChange (e) {
+      const {
+        props,
+      } = this;
+      this.props.onStepChange();
+    }
+
+    function next () {
+      setInterviewStep(prevInterviewStep => prevInterviewStep + 1)
+    }
+
+    function prev () {
+      setInterviewStep(prevInterviewStep => prevInterviewStep - 1)
+    }
 
     const {
       state,
@@ -68,7 +76,7 @@ export default class Interview extends Component {
     return (
       <Wrapper
         type={type}
-        step={state.step}
+        step={interviewStep}
         {...rest}
       >
         <Wrapper
@@ -91,7 +99,6 @@ export default class Interview extends Component {
         </Wrapper>
       </Wrapper>
     );
-  }
 }
 
 Interview.defaultProps = {

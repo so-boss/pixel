@@ -5,7 +5,7 @@ import {withKnobs, text} from "@storybook/addon-knobs";
 import { Formik, Form } from 'formik';
 
 import * as Yup from 'yup';
-import { motion } from 'framer-motion'
+//import { motion } from 'framer-motion'
 
 const validationSchema = Yup.object()
   .shape({
@@ -126,20 +126,6 @@ export const removeDriverReason = () => (
           />
         </UI.Drawer>
       </ActionBlock>
-      <spacer />
-      <UI.Action
-        id="driver_block"
-        driver="Emily Swamker"
-        description="Named Insured"
-        drawer="expanded"
-      >
-        <UI.Drawer id="interview">
-          <UI.Question
-            id="remove_driver_reason"
-            driver="Emily"
-          />
-        </UI.Drawer>
-      </UI.Action>
     </div>
   </div>
 );

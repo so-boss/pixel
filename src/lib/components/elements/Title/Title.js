@@ -41,13 +41,7 @@ import './Title.pcss';
 //
 // export default Title;
 
-export default class Title extends React.Component {
-  render () {
-    const {
-      children,
-      ...rest
-    } = this.props;
-
+export default function Title({children, ...rest}){
     /*
         <Title>A Text Title</Title>
      */
@@ -61,11 +55,9 @@ export default class Title extends React.Component {
         </title>
       </Wrapper>
     );
-  }
 }
 Title.defaultProps = {
-  type: 'title',
-  pixel: 'title'
+  type: 'title'
 };
 
 // title.propTypes = {

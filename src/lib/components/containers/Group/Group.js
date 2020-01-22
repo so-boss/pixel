@@ -1,6 +1,6 @@
 import { Container } from './../../index.js';
 
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import './Group.pcss';
 
@@ -25,28 +25,19 @@ import './Group.pcss';
 //   children: PropTypes.any
 // };
 
-//export default Group;
 
-export default class Group extends React.Component {
-  render () {
-    const {
-      id,
-      type,
-      children,
-      tag,
-      ...rest
-    } = this.props;
-
-    return (
-      <Container
-        tag={tag}
-        {...rest}
-      >
-        {children}
-      </Container>
-    );
-  }
+//const Group = ({id, type, children, tag, ...rest}) => {
+export default function Group ({id, type, children, tag, ...rest}) {
+  return (
+    <Container
+      tag={tag}
+      {...rest}
+    >
+      {children}
+    </Container>
+  );
 }
+
 Group.defaultProps = {
   tag: 'group',
 };

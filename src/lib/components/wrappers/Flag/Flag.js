@@ -1,30 +1,22 @@
-import React, { Component } from 'react';
+import React, {  } from 'react';
 import PropTypes from 'prop-types';
 import './Flag.pcss';
 
 import { Block } from '../../';
 
-export default class Flag extends Component {
-  render () {
-    const {
-      children,
-      theme,
-      ...rest
-    } = this.props;
-
-    return (
-      <flag
-        theme={theme}
-        {...rest}
-      >
-        <Block
-          lines={[
-            children,
-          ]}
-        />
-      </flag>
-    );
-  }
+export default function Flag ({ children, theme, ...rest}) {
+  return (
+    <flag
+      theme={theme}
+      {...rest}
+    >
+      <Block
+        lines={[
+          children,
+        ]}
+      />
+    </flag>
+  );
 }
 
 Flag.defaultProps = {

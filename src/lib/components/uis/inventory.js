@@ -812,7 +812,7 @@ uis.field = {
       />
 
       <UI.Field
-        id="name"
+        id="name"S
         label="Name of Financier"
         mask="ACME Holdings"
       />

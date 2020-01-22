@@ -9,11 +9,6 @@ export default function Thing ({children, ...rest}) {
     </thing>
   );
 }
-
-Thing.defaultProps = {
-
-};
-
 Thing.propTypes = {
   id: PropTypes.string,
   type: PropTypes.string,
