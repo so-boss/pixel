@@ -38,6 +38,7 @@ export default function Field ({ type, value, label, name, id, rules, placeholde
       <Input
         id={id||name}
         placeholder={label||placeholder}
+        autoComplete="off"
       />
     </Form.Item>
   );

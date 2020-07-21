@@ -8,6 +8,7 @@ import {
   Interview,
   Flag,
   Tag,
+  Field,
   Action,
   Block,
   ActionBlock,
@@ -20,7 +21,7 @@ import {
   Inputs,
   InputSelect,
 } from '../';
-import { Formik, Field, Form, ErrorMessage } from 'formik';
+//import { Formik, Field, Form, ErrorMessage } from 'formik';
 
 const _ = require('lodash');
 const __ = require('../../utils/uis.js');
@@ -718,7 +719,7 @@ uis.field = {
 */
   def ({ ...rest }) {
     return (
-      <Input
+      <Field
         type="text"
         {...rest}
       />

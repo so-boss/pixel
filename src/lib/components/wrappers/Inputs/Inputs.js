@@ -1,30 +1,30 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Form } from 'antd';
+import 'antd/dist/antd.css';
 import './Inputs.pcss';
 
-import { Formik, Form } from 'formik';
-
-import * as Yup from 'yup';
-
-const validationSchema = Yup.object()
-  .shape({
-    name_first: Yup.string()
-      .min(2, 'Too Short!')
-      .max(30, 'Too Long!')
-      .required('Required'),
-    name_last: Yup.string()
-      .min(2, 'Too Short!')
-      .max(30, 'Too Long!')
-      .required('Required'),
-    name_full: Yup.string()
-      .min(2, 'Too Short!')
-      .max(70, 'Too Long!')
-      .required('Required'),
-    email: Yup.string()
-      .email('Invalid email')
-      .required('Required'),
-  });
-export const FormContext = React.createContext();
+//import { Formik, Form } from 'formik';
+//import * as Yup from 'yup';
+// const validationSchema = Yup.object()
+//   .shape({
+//     name_first: Yup.string()
+//       .min(2, 'Too Short!')
+//       .max(30, 'Too Long!')
+//       .required('Required'),
+//     name_last: Yup.string()
+//       .min(2, 'Too Short!')
+//       .max(30, 'Too Long!')
+//       .required('Required'),
+//     name_full: Yup.string()
+//       .min(2, 'Too Short!')
+//       .max(70, 'Too Long!')
+//       .required('Required'),
+//     email: Yup.string()
+//       .email('Invalid email')
+//       .required('Required'),
+//   });
+//export const FormContext = React.createContext();
 
 /*
     <Inputs
@@ -40,7 +40,38 @@ export const FormContext = React.createContext();
       <UI.Field id="name_last" />
       <UI.Field id="name_full" />
     </Inputs>
+
+    <Inputs
+      layout="vertical"
+      form={form}
+      name="dynamic_rule"
+    >
 */
+export default class Inputs extends Component {
+  render () {
+    const {
+      id,
+      name,
+      form,
+      layout,
+      children,
+      ...rest
+    } = this.props;
+
+    return (
+      <Form
+        name={name||id}
+        layout={layout||"vertical"}
+        form={form}
+        {...rest}
+      >
+        {children}
+      </Form>
+    );
+  }
+}
+
+/*
 export default class Inputs extends Component {
   render () {
     const {
@@ -69,6 +100,7 @@ export default class Inputs extends Component {
   }
 }
 
+ */
 Inputs.displayName = 'Inputs';
 Inputs.propTypes = {
 

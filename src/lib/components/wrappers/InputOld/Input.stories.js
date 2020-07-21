@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Field, ActionBlock, Action, Block, UI, Wrapper, Flag, Tag, Inputs, InputSelect } from '../../../components';//'../../../components';
-import {withKnobs, text} from "@storybook/addon-knobs";
+import { Field, UI, Wrapper, Inputs, InputSelect } from '../../../components';//'../../../components';
 import { Form, Input, Button, Checkbox  } from 'antd';
 import 'antd/dist/antd.css';
+
+import {withKnobs, text} from "@storybook/addon-knobs";
 
 //import { Formik, Form } from 'formik';
 //import * as Yup from 'yup';
@@ -92,24 +93,21 @@ export const masking = () => {
   return (
     <div type="story">
       <div>
-        <Form
-          layout="vertical"
+        <Inputs
           form={form}
-          name="dynamic_rule"
+          name="name_demo"
         >
-          <Field
-            name="full_name"
-            label="Full Name"
+          <UI.Field
+            id="name_full"
             rules={[
               {
                 required: true,
                 message: 'Please input your full name',
               },
-            ]}
-          />
-          <Field
-            name="first_name"
-            label="First Name"
+            ]}/>
+          <UI.Field id="name_first" />
+          <UI.Field
+            id="name_last"
             rules={[
               {
                 required: checkFirst,
@@ -127,7 +125,7 @@ export const masking = () => {
               Check
             </Button>
           </Form.Item>
-        </Form>
+        </Inputs>
       </div>
     </div>
   );
