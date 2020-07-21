@@ -16,7 +16,7 @@
     "parcel-serve": "parcel serve ./src/module.js --global pixel --target web",
     "parcel-build-watch": "parcel watch ./src/module.js --global pixel --target web",
     "sourcemap": "source-map-explorer --html ./dist/index.js ./dist/index.js.map > source-map.html",
-    "storybook": "start-storybook -s ./dist -p 9009",
+    "storybook": "start-storybook -s dist -p 9009 --ci",
     "build-storybook": "build-storybook",
     "svgr": "svgr -d src/Icons/standard/ assets/icons/standard/"
   },

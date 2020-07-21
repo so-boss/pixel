@@ -1,29 +1,29 @@
 import React from "react";
-import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag, Inputs, InputSelect } from '../../../components';//'../../../components';
+import { UI, Inputs, InputSelect } from '../../../components';//'../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
-import { Formik, Form } from 'formik';
+//import { Formik, Form } from 'formik';
 
-import * as Yup from 'yup';
+//import * as Yup from 'yup';
 
-const validationSchema = Yup.object()
-  .shape({
-    name_first: Yup.string()
-      .min(2, 'Too Short!')
-      .max(30, 'Too Long!')
-      .required('Required'),
-    name_last: Yup.string()
-      .min(2, 'Too Short!')
-      .max(30, 'Too Long!')
-      .required('Required'),
-    name_full: Yup.string()
-      .min(2, 'Too Short!')
-      .max(70, 'Too Long!')
-      .required('Required'),
-    email: Yup.string()
-      .email('Invalid email')
-      .required('Required'),
-  });
+// const validationSchema = Yup.object()
+//   .shape({
+//     name_first: Yup.string()
+//       .min(2, 'Too Short!')
+//       .max(30, 'Too Long!')
+//       .required('Required'),
+//     name_last: Yup.string()
+//       .min(2, 'Too Short!')
+//       .max(30, 'Too Long!')
+//       .required('Required'),
+//     name_full: Yup.string()
+//       .min(2, 'Too Short!')
+//       .max(70, 'Too Long!')
+//       .required('Required'),
+//     email: Yup.string()
+//       .email('Invalid email')
+//       .required('Required'),
+//   });
 
 //export const FormContext = React.createContext();
 
@@ -43,7 +43,6 @@ export const firstName = () => (
         initialValues={{
           name_first: ''
         }}
-        validationSchema={validationSchema}
       >
         <UI.Field id="name_first" />
       </Inputs>
@@ -58,7 +57,6 @@ export const middleName = () => (
         initialValues={{
           name_middle: ''
         }}
-        validationSchema={validationSchema}
       >
         <UI.Field id="name_middle" />
       </Inputs>
@@ -73,7 +71,6 @@ export const lastName = () => (
         initialValues={{
           name_last: ''
         }}
-        validationSchema={validationSchema}
       >
         <UI.Field id="name_last" />
       </Inputs>
@@ -88,7 +85,6 @@ export const fullName = () => (
         initialValues={{
           name: ''
         }}
-        validationSchema={validationSchema}
       >
         <UI.Field id="name_full" />
       </Inputs>
@@ -103,7 +99,6 @@ export const suffix = () => (
         initialValues={{
           name_suffix: ''
         }}
-        validationSchema={validationSchema}
       >
         <UI.Field id="name_suffix" />
       </Inputs>
@@ -118,7 +113,6 @@ export const businessName = () => (
         initialValues={{
           name: ''
         }}
-        validationSchema={validationSchema}
       >
         <UI.Field
           id="name"
@@ -142,7 +136,6 @@ export const email = () => (
         initialValues={{
           email: '',
         }}
-        validationSchema={validationSchema}
       >
         <UI.Field id="email" />
       </Inputs>

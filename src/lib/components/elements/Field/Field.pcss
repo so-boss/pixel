@@ -1,35 +1,64 @@
-[type=fields] {
-  display:flex;
-  flex:1;
-  justify-content: flex-end;
+.ant-form {
+  .ant-form-item {
+    position:relative;
+    height:64px;
+    .ant-form-item-label {
+      padding: 0;
+      position: absolute;
+      top: 50%;
+      z-index: 1;
+      margin: -6px 0 0 13px;
+      text-transform: capitalize;
+      font-weight:500;
+      font-size:18px;
+      height: 12px;
+      line-height: 8px;
+      opacity:0;
 
-  [type=field] {
-    display:flex;
-    flex:initial;
-    flex-direction: column;
-    font-size:14px;
+      transition: top .1s ease-out, opacity .1s;
 
-    > div {
-      width:100%;
+      label {
+        height:100%
+      ;
+      }
     }
 
-    &:nth-child(1) {
-
-    }
-    &:nth-child(2) {
-      margin-left:16px;
-      > div {
+    .ant-form-item-control {
+      > * {
+        height:100%;
+        > * {
+          height:100%;
+          > input {
+            height:100%;
+            padding-top:0px;
+          }
+        }
 
       }
     }
 
-    > div {
-      &:nth-child(1) {
+    &[state] {
 
+    }
+    &[state=empty] {
+
+    }
+    &[state=focused] {
+      .ant-form-item-label {
+        top:calc(6px + 8px);
+        font-size:14px;
+        font-weight:bold;
+        opacity:1;
       }
-      &:nth-child(2) {
-        color:grey;
+      .ant-input {
+        padding-top: 30px;
       }
+    }
+    &[state=typing] {
+
+    }
+    &[state=idle] {
+
     }
   }
 }

@@ -24,7 +24,7 @@ import './Inputs.pcss';
 //       .email('Invalid email')
 //       .required('Required'),
 //   });
-//export const FormContext = React.createContext();
+export const FormContext = React.createContext();
 
 /*
     <Inputs
@@ -53,6 +53,7 @@ export default class Inputs extends Component {
       id,
       name,
       form,
+      formSize,
       layout,
       children,
       ...rest
@@ -63,6 +64,8 @@ export default class Inputs extends Component {
         name={name||id}
         layout={layout||"vertical"}
         form={form}
+        size={formSize||"large"}
+        autoComplete="off"
         {...rest}
       >
         {children}

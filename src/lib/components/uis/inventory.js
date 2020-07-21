@@ -741,11 +741,12 @@ uis.field = {
         id="name_first"
      />
   */
-  name_first ({ id }) {
+  name_first ({ id, ...rest }) {
     return (
       <UI.Field
         name={id}
         label="first name"
+        {...rest}
       />
     );
   },
@@ -754,11 +755,12 @@ uis.field = {
         id="name_middle"
      />
   */
-  name_middle ({ id }) {
+  name_middle ({ id, ...rest }) {
     return (
       <UI.Field
         name={id}
         label="middle"
+        {...rest}
       />
     );
   },
@@ -767,7 +769,7 @@ uis.field = {
           id="name_last"
        />
   */
-  name_last ({ id }) {
+  name_last ({ id, ...rest }) {
     return (
       <UI.Field
         name={id}
@@ -780,10 +782,11 @@ uis.field = {
           id="name_full"
        />
   */
-  name_full ({ id }) {
+  name_full ({ id, ...rest }) {
     return (
       <UI.Field
         id="name"
+        {...rest}
       />
     );
   },

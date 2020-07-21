@@ -5,14 +5,25 @@ import { Wrapper, Label } from './../../index.js';
 import { Form, Input, Button, Checkbox  } from 'antd';
 import 'antd/dist/antd.css';
 import './Field.pcss';
+import { FormContext } from '../../wrappers/Inputs/Inputs'
 
-/*
-    <Wrapper pixel="field">
-      <Label>{value}</Label>
-      <Label type={type}>{label}</Label>
+function handleKeypress (e) {
+  let state;
 
-    </Wrapper>
- */
+  if (e.type === 'focus') {
+    state = 'focused';
+  }
+  if (e.type === 'input') {
+    state = 'typing';
+  }
+  if (e.type === 'blur') {
+    state = 'idle';
+  }
+
+  return e.currentTarget.setAttribute('state', state);
+}
+
+
 /*
     <Field
       id="full_name"
@@ -26,22 +37,27 @@ import './Field.pcss';
     />
 */
 
-export default function Field ({ type, value, label, name, id, rules, placeholder }) {
+export default function Field ({ type, value, label, name, id, rules, placeholder, mask }) {
   return (
-    <Form.Item
-      name={name}
-      type={type}
-      value={value}
-      label={label}
-      rules={rules}
-    >
-      <Input
-        id={id||name}
-        placeholder={label||placeholder}
-        autoComplete="off"
-      />
-    </Form.Item>
-  );
+        <Form.Item
+          name={name}
+          type={type}
+          value={value}
+          label={label}
+          rules={rules}
+          onInput={handleKeypress}
+          onFocus={handleKeypress}
+          onBlur={handleKeypress}
+          state="empty"
+
+        >
+          <Input
+            id={id||name}
+            placeholder={mask||placeholder||label}
+            autoComplete="off"
+          />
+        </Form.Item>
+  )
 }
 
 Field.propTypes = {

@@ -1,39 +1,33 @@
 import React from "react";
 import {
-  ActionBlock,
-  Action,
-  Block,
-  UI,
-  Wrapper,
-  Flag,
-  Tag,
   Inputs,
-  InputSelect
+  InputSelect,
+  UI
 } from '../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
-import { Formik, Form } from 'formik';
+//import { Formik, Form } from 'formik';
 
-import * as Yup from 'yup';
+//import * as Yup from 'yup';
 
-const validationSchema = Yup.object()
-  .shape({
-    name_first: Yup.string()
-      .min(2, 'Too Short!')
-      .max(30, 'Too Long!')
-      .required('Required'),
-    name_last: Yup.string()
-      .min(2, 'Too Short!')
-      .max(30, 'Too Long!')
-      .required('Required'),
-    name_full: Yup.string()
-      .min(2, 'Too Short!')
-      .max(70, 'Too Long!')
-      .required('Required'),
-    email: Yup.string()
-      .email('Invalid email')
-      .required('Required'),
-  });
+// const validationSchema = Yup.object()
+//   .shape({
+//     name_first: Yup.string()
+//       .min(2, 'Too Short!')
+//       .max(30, 'Too Long!')
+//       .required('Required'),
+//     name_last: Yup.string()
+//       .min(2, 'Too Short!')
+//       .max(30, 'Too Long!')
+//       .required('Required'),
+//     name_full: Yup.string()
+//       .min(2, 'Too Short!')
+//       .max(70, 'Too Long!')
+//       .required('Required'),
+//     email: Yup.string()
+//       .email('Invalid email')
+//       .required('Required'),
+//   });
 
 //export const FormContext = React.createContext();
 
@@ -51,12 +45,11 @@ export const personsName = () => (
       <Inputs
         id="names"
         initialValues={{
-          name_first: '',
-          name_last: '',
+          name_first: 'Michael',
+          name_last: 'Kelly',
           name_middle: '',
           name_suffix: ''
         }}
-        validationSchema={validationSchema}
       >
         <UI.Fields id="name_person"/>
       </Inputs>
@@ -73,7 +66,6 @@ export const address = () => (
           address_city: '',
           address_zip: '',
         }}
-        validationSchema={validationSchema}
       >
         <UI.Fields id="address" />
       </Inputs>
@@ -91,7 +83,6 @@ export const lessor = () => (
           address_city: '',
           address_zip: '',
         }}
-        validationSchema={validationSchema}
       >
         <UI.Fields id="lessor" />
       </Inputs>
@@ -109,7 +100,6 @@ export const financier = () => (
           address_city: '',
           address_zip: '',
         }}
-        validationSchema={validationSchema}
       >
         <UI.Fields id="financier" />
       </Inputs>
