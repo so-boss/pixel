@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper } from 'pixel'//'../../../components';
+import { Wrapper } from '../../../components';
 
 export default {
   title: 'Containers|Group'

@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import {
   UI, Page, Wrapper, Interview, Flag, Tag, Action, Block, ActionBlock, ActionButton, ActionLink, Icon, Group, Drawer, Title,
 } from '../../';
@@ -30,7 +30,7 @@ const ui = {
   auto ({ hugeness }) {
     return (
       <UI.Icon
-        svg="core-auto"
+        id="auto"
         hugeness={config('s', hugeness)}
       />
     );
@@ -81,4 +81,4 @@ const ui = {
   }
 };
 
-module.exports = ui;
+export {ui};

@@ -24,7 +24,7 @@ block {
             z-index:1;
 
             @mixin block_col_1 {
-
+                flex-direction:row;
             };
             @mixin block_col_2 {
                 & > thing:nth-child(1) {
@@ -32,6 +32,7 @@ block {
                 }
             };
             @mixin block_col_3 {
+                flex-direction:row;
                 & > svg {
                     @mixin span 16;
                 }

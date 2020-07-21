@@ -9,7 +9,7 @@ import {
   Group,
   Title,
   ActionLink
-} from 'pixel';
+} from '../../../components';
 
 export default {
   title: 'Containers|Drawer'

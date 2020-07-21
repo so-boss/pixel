@@ -449,7 +449,7 @@ const mixins = {
       {
         '@mixin-content': {},
         flex:1,
-        '& > thing':_.merge(
+        '& > [px=thing]':_.merge(
           mixins.span(mixin, 'x'),
           mixins.empty(mixin),
           mixins.font(mixin, 'size', 's'),
@@ -457,7 +457,7 @@ const mixins = {
             margin:px.block.line.margin,
           }
         ),
-        '& > thing:last-child': {
+        '& > [px=thing]:last-child': {
           marginBottom:'0px',
         }
       }
@@ -957,7 +957,7 @@ const mixins = {
       padding:px.page.header.block.padding,
       '& > wrapper:nth-child':{
         '&(2)':{
-          '& > thing:nth-child':{
+          '& > [px=thing]:nth-child':{
             '&(1)': _.merge(
               mixins.font(mixin, 'size','xl'),
               mixins.font(mixin, 'weight', 'normal'),
@@ -1054,7 +1054,7 @@ const mixins = {
             },
           )
         },
-        '& > wrapper[type=input] > thing[type=label]': mixins.field_label(mixin, "def"),
+        '& > wrapper[type=input] > [px=thing][type=label]': mixins.field_label(mixin, "def"),
       },
     );
 
@@ -1225,7 +1225,7 @@ const mixins = {
   label(mixin) {
     let rules = {};
 
-    rules['thing[type=label]'] = _.merge(
+    rules['[px=thing][type=label]'] = _.merge(
       mixins.font(mixin, 'weight', 'normal'),
       mixins.font(mixin, 'size', 'm'),
       mixins.font(mixin, 'color', 'grey_2'),

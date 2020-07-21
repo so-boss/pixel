@@ -2,7 +2,7 @@ import { configure, addParameters, addDecorator } from '@storybook/react';
 //import { withInfo } from '@storybook/addon-info';
 
 import csaa from './csaa';
-import '../dist/index.css';
+import './dist/module.css';
 //import {GlobalStyle} from "pixel/src/storybook/components/shared/global";
 
 //<GlobalStyle />

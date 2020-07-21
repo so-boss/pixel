@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import './ActionBlock.pcss';
 
 import { Action, Block, Drawer } from '../../';
-import { WrapperProvider } from '../WrapperContext/WrapperContext.js'
+import { WrapperProvider, WrapperConsumer } from '../WrapperContext/WrapperContext.js'
 
 const PreconfiguredAction = ({ id, drawer, expanded, state, indicatorProps, children, ...props }) => (
   <Action
     id={id}
-    // type={drawer}
+    type={drawer}
     indicatorProps={indicatorProps}
     drawer={drawer}
     expanded={expanded}//{state.drawer.expanded}
@@ -22,14 +22,14 @@ const PreconfiguredAction = ({ id, drawer, expanded, state, indicatorProps, chil
   </Action>
 );
 
-export default function ActionBlock({id, children, indicator, drawer, ...rest}){
-  const [isDrawerEnabled, setDrawerEnabled] = useState(false);
+export default class ActionBlock extends React.Component{
+  //const [isDrawerEnabled, setDrawerEnabled] = useState(false);
   //const [isDrawerExpanded, setDrawerExpanded] = useState(false);
 
   // this.store = {
   //   $drawer:null,
   // };
-  /*
+
   constructor (props) {
     super(props);
     this.handleActionBlockClick = this.handleActionBlockClick.bind(this);
@@ -49,7 +49,6 @@ export default function ActionBlock({id, children, indicator, drawer, ...rest}){
 
   componentDidMount () {
     const {
-      drawer,
       children,
     } = this.props;
 
@@ -77,17 +76,15 @@ export default function ActionBlock({id, children, indicator, drawer, ...rest}){
     }));
   }
 
-   */
-
   // const getDrawer = (o) => {
   //
   //   this.store.$drawer = o.$container;
   // }
 
-  function handleActionBlockClick(){
-    //setDrawerEnabled(true)
-    //setDrawerExpanded(currentExpandedState => !currentExpandedState)
-  }
+  // function handleActionBlockClick(){
+  //   //setDrawerEnabled(true)
+  //   //setDrawerExpanded(currentExpandedState => !currentExpandedState)
+  // }
 
   // function getState() {
   //   return {
@@ -105,89 +102,95 @@ export default function ActionBlock({id, children, indicator, drawer, ...rest}){
   //   }
   // }
 
-  const renderChildren = ({children}) => {
-    // const {
-    //   children,
-    // } = this.props;
+  render() {
+    const renderChildren = ({ children }) => {
+      // const {
+      //   children,
+      // } = this.props;
 
-    // const {
-    //   drawer,
-    // } = this.state;
+      const {
+        drawer,
+      } = this.state;
 
-    return React.Children.map(children, child => React.cloneElement(child, {
-      //drawer,
-      onActionBlockClick:handleActionBlockClick,
-      //getContainer:getDrawer()
-      //store:this.store,
-    }));
-  }
-
-  const indicatorObj = {
-    type: false,
-    text: null,
-    orientation: false,
-  };
-
-  // If indicator IS NOT ARROW
-  if (indicator !== 'arrow') {
-    // BECAUSE indicator is NOT specified
-    if (!indicator) {
-      // THEN indicator is hidden (default)
-      indicatorObj.type = false;
-    } else {
-      // OTHERWISE indicator is TEXT LABEL
-      indicatorObj.type = 'text';
-      indicatorObj.text = indicator;
+      return React.Children.map(children, child => React.cloneElement(child, {
+        //drawer,
+        onActionBlockClick: this.handleActionBlockClick,
+        //getContainer:getDrawer()
+        //store:this.store,
+      }));
     }
-  } else {
-    // OTHERWISE indicator is an arrow
-    // AND should be oriented right (def)
-    indicatorObj.type = 'arrow';
-    indicatorObj.orientation = 'right';
-  }
 
-  // If Drawer Exists becasue it's passed as a child
-  //                  because it's set to 'expanded' or 'true' via the drawer prop (temp measure until state is added back in)
-  if ((children && children.type.displayName === 'Drawer') || (drawer && (drawer === ('expanded' || 'true')))) {
-    // THEN orient arrow down
-    indicatorObj.orientation = 'down';
+    const {
+      indicator,
+      drawer,
+      id,
+      children,
+      ...rest
+    } = this.props;
+
+    const indicatorObj = {
+      type: false,
+      text: null,
+      orientation: false,
+    };
+
+    // If indicator IS NOT ARROW
+    if (indicator !== 'arrow') {
+      // BECAUSE indicator is NOT specified
+      if (!indicator) {
+        // THEN indicator is hidden (default)
+        indicatorObj.type = false;
+      } else {
+        // OTHERWISE indicator is TEXT LABEL
+        indicatorObj.type = 'text';
+        indicatorObj.text = indicator;
+      }
+    } else {
+      // OTHERWISE indicator is an arrow
+      // AND should be oriented right (def)
+      indicatorObj.type = 'arrow';
+      indicatorObj.orientation = 'right';
+    }
+
+    // If Drawer Exists becasue it's passed as a child
+    //                  because it's set to 'expanded' or 'true' via the drawer prop (temp measure until state is added back in)
+    if ((children && children.type.displayName === 'Drawer') ||
+      (drawer && (drawer === ('expanded' || 'true')))) {
+      // THEN orient arrow down
+      indicatorObj.orientation = 'down';
+
+      return (
+        //<WrapperProvider value={activeState}>
+        <WrapperProvider>
+          <wrapper>
+            <PreconfiguredAction
+              onActionBlockClick={this.handleActionBlockClick}
+              id={id}
+              drawer={drawer}
+              indicatorProps={indicatorObj}
+              //state={getState()}
+              {...rest}
+            >
+              {children}
+            </PreconfiguredAction>
+          </wrapper>
+        </WrapperProvider>
+      );
+    }
 
     return (
       //<WrapperProvider value={activeState}>
       <WrapperProvider>
-        <wrapper>
-          <PreconfiguredAction
-            onActionBlockClick={handleActionBlockClick}
-            id={id}
-            //drawer={drawer}
-            indicatorProps={indicatorObj}
-            //state={getState()}
-            {...rest}
-          >
-            {children}
-          </PreconfiguredAction>
-        </wrapper>
+        <PreconfiguredAction
+          id={id}
+          indicatorProps={indicatorObj}
+          {...rest}
+        >
+          {children}
+        </PreconfiguredAction>
       </WrapperProvider>
     );
   }
-
-  return (
-    //<WrapperProvider value={activeState}>
-    <WrapperProvider>
-      <PreconfiguredAction
-        id={id}
-        indicatorProps={indicatorObj}
-        {...rest}
-      >
-        {children}
-      </PreconfiguredAction>
-    </WrapperProvider>
-  );
 }
 
 ActionBlock.displayName = 'ActionBlock';
-ActionBlock.propTypes = {
-  id: PropTypes.string,
-  children: PropTypes.any,
-  indicator: PropTypes.any,
-};

@@ -99,8 +99,8 @@ const ColumnThree = ({ children, indicator }) => (
   </Column>
 );
 
-export default function Block ({icon, lines, flag, indicatorProps, onActionBlockClick}) {
-  /*
+
+export default class Block extends React.Component{
   constructor (props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
@@ -110,26 +110,30 @@ export default function Block ({icon, lines, flag, indicatorProps, onActionBlock
     e.stopPropagation();
     this.props.onActionBlockClick(e); // eslint-disable-line
   }
-  */
 
-  function handleClick (e) {
-    e.stopPropagation();
-    this.props.onActionBlockClick(e); // eslint-disable-line
+  render() {
+    const {
+      icon,
+      lines,
+      indicatorProps,
+      flag,
+      handleClick,
+      onActionBlockClick,
+    } = this.props;
+    return (
+      <block
+        onClick={onActionBlockClick && handleClick}
+      >
+        <Wrapper>
+          <ColumnOne icon={icon}/>
+          <ColumnTwo lines={lines}/>
+          <ColumnThree indicator={indicatorProps}>
+            {flag && <Flag theme={flag.theme}>{flag.label}</Flag>}
+          </ColumnThree>
+        </Wrapper>
+      </block>
+    );
   }
-
-  return (
-    <block
-      onClick={onActionBlockClick && handleClick}
-    >
-      <Wrapper>
-        <ColumnOne icon={icon} />
-        <ColumnTwo lines={lines} />
-        <ColumnThree indicator={indicatorProps}>
-          {flag && <Flag theme={flag.theme}>{flag.label}</Flag>}
-        </ColumnThree>
-      </Wrapper>
-    </block>
-  );
 }
 
 Block.displayName = 'Block';
@@ -140,8 +144,8 @@ Block.defaultProps = {
   },
 };
 
-Block.propTypes = {
-  icon: PropTypes.object,
-  lines: PropTypes.array,
-  indicatorProps: PropTypes.object,
-};
+// Block.propTypes = {
+//   icon: PropTypes.object,
+//   lines: PropTypes.array,
+//   indicatorProps: PropTypes.object,
+// };

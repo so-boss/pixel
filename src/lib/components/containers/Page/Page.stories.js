@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page, Block } from 'pixel';//'../../../components';
+import { Page, Block } from '../../../components';//'../../../components';
 
 export default {
   title: 'Containers|Page'

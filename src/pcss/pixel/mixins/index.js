@@ -422,7 +422,7 @@ const mixins = {
     );
 
     rules['&:nth-child(1)']['&[hugeness]'] = _.merge(
-      mixins.flex(mixin, 'center', 'y'),
+      mixins.flex(mixin, 'top', 'y'),
       mixins.flex(mixin, 'left'),
     );
 
@@ -474,7 +474,7 @@ const mixins = {
     var col_3 = px.block.col_3;
     rules['&:nth-child(3)'] =_.merge(
       mixins.flex(mixin, 'right'),
-      mixins.flex(mixin, 'bottom'),
+      // mixins.flex(mixin, 'bottom'),
       mixins.empty(mixin),
       {
         '@mixin-content': {},
@@ -1056,7 +1056,7 @@ const mixins = {
             },
           )
         },
-        '& > wrapper[type=input] > thing[type=label]': mixins.field_label(mixin, "def"),
+        '& > wrapper[type=input] > [type=label]': mixins.field_label(mixin, "def"),
       },
     );
 
@@ -1227,7 +1227,7 @@ const mixins = {
   label(mixin) {
     let rules = {};
 
-    rules['thing[type=label]'] = _.merge(
+    rules['[type=label]'] = _.merge(
       mixins.font(mixin, 'weight', 'normal'),
       mixins.font(mixin, 'size', 'm'),
       mixins.font(mixin, 'color', 'grey_2'),

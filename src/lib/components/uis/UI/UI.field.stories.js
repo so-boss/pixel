@@ -1,5 +1,5 @@
 import React from "react";
-import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag, Inputs, InputSelect } from 'pixel';//'../../../components';
+import { ActionBlock, Action, Block, UI, Wrapper, Flag, Tag, Inputs, InputSelect } from '../../../components';//'../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
 import { Formik, Form } from 'formik';

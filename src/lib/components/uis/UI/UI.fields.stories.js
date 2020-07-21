@@ -9,7 +9,7 @@ import {
   Tag,
   Inputs,
   InputSelect
-} from 'pixel';
+} from '../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
 import { Formik, Form } from 'formik';

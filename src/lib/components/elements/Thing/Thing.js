@@ -4,7 +4,7 @@ import './Thing.pcss';
 
 export default function Thing ({children, ...rest}) {
   return (
-    <thing {...rest}>
+    <thing px="thing" {...rest}>
       {children}
     </thing>
   );

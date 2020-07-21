@@ -1,5 +1,5 @@
 import React from "react";
-import { UI} from 'pixel';//'../../../components';
+import { UI} from '../../../components';//'../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
 export default {

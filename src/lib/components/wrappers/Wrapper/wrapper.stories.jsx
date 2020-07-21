@@ -1,7 +1,7 @@
 import React from 'react';
 // import {
 //   Wrapper
-// } from 'pixel';
+// } from '../../../components';
 
 export default {
   title: 'Wrappers|Wrapper'

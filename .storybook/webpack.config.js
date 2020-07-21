@@ -6,6 +6,14 @@ module.exports = async ({ config, mode }) => {
    exclude:[path.resolve(__dirname, "/node_modules/")]
   });
 
+  // config.module.rules.push({
+  //   test: /\.css|.pcss$/,
+  //   use: [
+  //     'style-loader',
+  //     { loader: 'css-loader', options: { importLoaders: 1 } }
+  //   ]
+  // })
+
   // Return the altered config
   return config;
 };

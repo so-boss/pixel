@@ -1,5 +1,5 @@
 import React from 'react';
-import { Block, Wrapper, Drawer, Interview, Group, UI, Flag, Tag, Action, ActionBlock } from 'pixel'//'../../../components';
+import { Block, Wrapper, Drawer, Interview, Group, UI, Flag, Tag, Label, Action, ActionBlock } from '../../../components';
 
 export default {
   title: 'Wrappers|Label',
@@ -12,7 +12,7 @@ export default {
 export const text = () => (
   <div type="story">
     <div>
-
+      <Label />
     </div>
   </div>
 )

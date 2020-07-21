@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Block } from 'pixel';//'../../../components';
+import { Block } from '../../../components';//'../../../components';
 import {withKnobs, text} from "@storybook/addon-knobs";
 
 export default {

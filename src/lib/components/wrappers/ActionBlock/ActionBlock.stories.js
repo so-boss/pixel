@@ -1,5 +1,5 @@
 import React from 'react';
-import { Block, Wrapper, Drawer, Interview, UI, Flag, Tag, Action, ActionBlock } from 'pixel';
+import { Block, Wrapper, Drawer, Interview, UI, Flag, Tag, Action, ActionBlock } from '../../../components';
 
 export default {
   title: 'Wrappers|Action/Block',
