@@ -34,7 +34,6 @@ export const FormContext = React.createContext();
         name_last: '',
         name_full: '',
       }}
-      validationSchema={validationSchema}
     >
       <UI.Field id="name_first"/>
       <UI.Field id="name_last" />

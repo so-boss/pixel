@@ -1,12 +1,9 @@
 {
-  "name": "@so-boss/pixel",
+  "name": "@soboss/pixel",
   "version": "0.1.11",
   "description": "Pixel Design System's Web components for build stellar UI",
   "private": false,
   "main": "dist/module.js",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "scripts": {
     "clean": "rm -rf ./dist",
     "webpack-dev": "webpack --watch",
